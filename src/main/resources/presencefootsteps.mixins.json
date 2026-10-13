@@ -1,0 +1,16 @@
+{
+    "required": true,
+    "minVersion": "0.7",
+    "package": "eu.ha3.presencefootsteps.mixins",
+    "compatibilityLevel": "JAVA_25",
+    "client": [
+      "MAbstractBlock",
+      "MStairsBlock",
+      "MBlockSettings",
+      "IEntity",
+      "ILivingEntity",
+      "MClientPlayNetworkHandler",
+      "MLivingEntity",
+      "MSoundSystem"
+    ]
+}
