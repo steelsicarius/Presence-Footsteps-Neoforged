@@ -33,7 +33,6 @@ import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.RegisterDebugEntriesEvent;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
-import net.neoforged.neoforge.common.NeoForge;
 
 @Mod(value = PresenceFootsteps.MODID, dist = Dist.CLIENT)
 @EventBusSubscriber(modid = PresenceFootsteps.MODID, value = Dist.CLIENT)
@@ -91,8 +90,6 @@ public class PresenceFootsteps {
         // Allows NeoForge to show this mod's config screen from the mod list.
         container.registerExtensionPoint(IConfigScreenFactory.class, (mod, modListScreen) -> new PFOptionsScreen(modListScreen));
 
-        NeoForge.EVENT_BUS.register(this);
-
         updaterConfig.load();
         config.load();
         config.onChangedExternally(_ -> configChanged.set(true));
@@ -119,8 +116,8 @@ public class PresenceFootsteps {
     }
 
     @SubscribeEvent
-    public void onClientTick(ClientTickEvent.Post event) {
-        onTick(Minecraft.getInstance());
+    static void onClientTick(ClientTickEvent.Post event) {
+        getInstance().onTick(Minecraft.getInstance());
     }
 
     @SubscribeEvent
