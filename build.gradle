@@ -11,6 +11,18 @@ base {
     archivesName = mod_id
 }
 
+// LWJGL aarch64 dev natives (see dependencies block at the bottom) are only
+// published on Maven Central; the ModDevGradle plugin does not add it. Gradle
+// resolves every artifact of a module from the first repository that has its
+// metadata (Mojang's mirror, which lacks the arm64 natives), so the LWJGL group
+// must be pinned to Central exclusively.
+repositories {
+    exclusiveContent {
+        forRepository { mavenCentral() }
+        filter { includeGroup "org.lwjgl" }
+    }
+}
+
 // Mojang ships Java 25 to end users in 26.1.2, so mods should target Java 25.
 java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
@@ -89,4 +101,21 @@ idea {
         downloadSources = true
         downloadJavadoc = true
     }
+}
+
+// Dev-only: LWJGL aarch64 natives so runClient can boot on ARM64 Linux dev hosts
+// (this machine). Minecraft's dependency metadata only ships x64 linux natives.
+// LWJGL 3.4+ picks the matching architecture at runtime from META-INF/<os>/<arch>/.
+// Keep lwjglVersion in sync with the LWJGL version Minecraft depends on (see
+// "./gradlew -q dependencies --configuration runtimeClasspath | grep lwjgl").
+dependencies {
+    def lwjglVersion = '3.4.1'
+    runtimeOnly "org.lwjgl:lwjgl:${lwjglVersion}:natives-linux-arm64"
+    runtimeOnly "org.lwjgl:lwjgl-freetype:${lwjglVersion}:natives-linux-arm64"
+    runtimeOnly "org.lwjgl:lwjgl-glfw:${lwjglVersion}:natives-linux-arm64"
+    runtimeOnly "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}:natives-linux-arm64"
+    runtimeOnly "org.lwjgl:lwjgl-openal:${lwjglVersion}:natives-linux-arm64"
+    runtimeOnly "org.lwjgl:lwjgl-opengl:${lwjglVersion}:natives-linux-arm64"
+    runtimeOnly "org.lwjgl:lwjgl-stb:${lwjglVersion}:natives-linux-arm64"
+    runtimeOnly "org.lwjgl:lwjgl-tinyfd:${lwjglVersion}:natives-linux-arm64"
 }
