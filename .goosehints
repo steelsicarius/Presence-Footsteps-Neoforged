@@ -11,3 +11,8 @@ Reglas:
 - Trabaja en pasos pequeños, compila después de cada uno y haz git commit.
 - En este servidor ya hay un proceso ejecutándose en el puerto 25565, se tendrá que utilizar otro puerto como el 25599 para hacer pruebas.
 - Pregúntame solo si estás bloqueado o hay una decisión de diseño.
+# Pruebas en este host (ARM64, headless):
+- Servidor dev: ./gradlew runServer (usa puerto 25580; 25565 está ocupado).
+- Cliente dev: scripts/prepare-arm64-natives.sh && ./gradlew runClient bajo
+  xvfb-run. Necesita .lwjgl-arm64-natives/ (org.lwjgl.librarypath); ver
+  build.gradle. Sin audio (no hay backend), pero arranca hasta el menú.
