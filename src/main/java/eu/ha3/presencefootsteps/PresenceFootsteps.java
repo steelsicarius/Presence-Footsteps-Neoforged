@@ -7,13 +7,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.server.IntegratedServer;
 import net.minecraft.client.gui.components.toasts.SystemToast;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.lwjgl.glfw.GLFW;
 
 import com.mojang.blaze3d.platform.InputConstants;
 
@@ -68,9 +68,9 @@ public class PresenceFootsteps {
         );
     });
 
-    private final KeyMapping optionsKeyBinding = new KeyMapping("key.presencefootsteps.settings", InputConstants.Type.KEYSYM, InputConstants.KEY_F10, KEY_BINDING_CATEGORY);
-    private final KeyMapping toggleKeyBinding = new KeyMapping("key.presencefootsteps.toggle", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, KEY_BINDING_CATEGORY);
-    private final KeyMapping debugToggleKeyBinding = new KeyMapping("key.presencefootsteps.debug_toggle", InputConstants.Type.KEYSYM, InputConstants.KEY_Z, KEY_BINDING_CATEGORY);
+    private final KeyMapping optionsKeyBinding = new KeyMapping("key.presencefootsteps.settings", InputConstants.Type.KEYBOARD, InputConstants.KEY_F10, KEY_BINDING_CATEGORY);
+    private final KeyMapping toggleKeyBinding = new KeyMapping("key.presencefootsteps.toggle", InputConstants.UNKNOWN.getValue(), KEY_BINDING_CATEGORY);
+    private final KeyMapping debugToggleKeyBinding = new KeyMapping("key.presencefootsteps.debug_toggle", InputConstants.Type.KEYBOARD, InputConstants.KEY_Z, KEY_BINDING_CATEGORY);
     private final Edge toggler = new Edge(z -> {
         if (z) {
             config.toggleDisabled();
@@ -102,7 +102,6 @@ public class PresenceFootsteps {
     public SoundEngine getEngine() {
         return engine;
     }
-
     public PFConfig getConfig() {
         return config;
     }
@@ -113,6 +112,14 @@ public class PresenceFootsteps {
 
     public UpdateChecker getUpdateChecker() {
         return updater;
+    }
+
+    /**
+     * 26.1's Minecraft.isSingleplayer(): a local integrated server that is not published to LAN.
+     */
+    public static boolean isLocalServerUnpublished() {
+        IntegratedServer server = Minecraft.getInstance().getSingleplayerServer();
+        return server != null && !server.isPublished();
     }
 
     @SubscribeEvent
@@ -139,16 +146,16 @@ public class PresenceFootsteps {
     }
 
     private void onTick(Minecraft client) {
-        if (client.screen instanceof PFOptionsScreen screen && configChanged.getAndSet(false)) {
+        if (client.gui.screen() instanceof PFOptionsScreen screen && configChanged.getAndSet(false)) {
             screen.init(screen.width, screen.height);
         }
 
-        debugToggle.accept(InputConstants.isKeyDown(client.getWindow(), InputConstants.KEY_F3) && debugToggleKeyBinding.isDown());
+        debugToggle.accept(InputConstants.isKeyDown(InputConstants.KEY_F3) && debugToggleKeyBinding.isDown());
 
         Optional.ofNullable(client.player).filter(e -> !e.isRemoved()).ifPresent(cameraEntity -> {
-            if (client.screen == null) {
+            if (client.gui.screen() == null) {
                 if (optionsKeyBinding.isDown()) {
-                    client.setScreen(new PFOptionsScreen(client.screen));
+                    client.setScreenAndShow(new PFOptionsScreen(client.gui.screen()));
                 }
                 toggler.accept(toggleKeyBinding.isDown());
             }
@@ -171,6 +178,6 @@ public class PresenceFootsteps {
 
     public void showSystemToast(Component title, Component body) {
         Minecraft client = Minecraft.getInstance();
-        client.getToastManager().addToast(SystemToast.multiline(client, SystemToast.SystemToastId.PACK_LOAD_FAILURE, title, body));
+        SystemToast.addOrUpdate(client.gui.toastManager(), SystemToast.SystemToastId.PACK_LOAD_FAILURE, title, body);
     }
 }
