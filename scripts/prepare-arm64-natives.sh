@@ -9,9 +9,14 @@
 #    in openal-soft >= 1.23 (OL9's packaged openal-soft is 1.19.1 -> crash
 #    NPE in SOFTSystemEvents.alcEventIsSupportedSOFT).
 #
-# This script therefore builds openal-soft 1.24.3 from source with the
-# gcc-toolset-13 toolchain (static libstdc++/libgcc) and collects every LWJGL
-# aarch64 native from the Gradle cache into .lwjgl-arm64-natives/.
+#  * MC 26.2+ loads freetype at startup (NativeLibrariesBootstrap) and LWJGL's
+#    libfreetype.so requires GLIBC_2.35 (OL9 has 2.34), so we also build
+#    freetype 2.13.3 from source (pure C, only needs libc).
+#
+# This script therefore builds openal-soft 1.24.3 and freetype 2.13.3 from
+# source with the gcc-toolset-13 toolchain (static libstdc++/libgcc) and
+# collects every LWJGL aarch64 native from the Gradle cache into
+# .lwjgl-arm64-natives/.
 #
 # build.gradle picks the dir up (only if it exists) via:
 #   -Dorg.lwjgl.librarypath=<project>/.lwjgl-arm64-natives
@@ -53,6 +58,20 @@ cmake -S "$work/openal-soft-${OAL_VERSION}" -B "$work/openal-soft-${OAL_VERSION}
     -DALSOFT_BACKEND_WAVE=ON -DALSOFT_BACKEND_NULL=ON > /dev/null
 make -C "$work/openal-soft-${OAL_VERSION}/build" -j"$(nproc)" > /dev/null
 cp "$work/openal-soft-${OAL_VERSION}/build/libopenal.so.${OAL_VERSION}" "$dest/libopenal.so"
+
+# Build freetype (LWJGL's build needs GLIBC_2.35).
+FT_VERSION=2.13.3
+curl -sL -o "$work/ft.tar.gz" \
+    "https://download.savannah.gnu.org/releases/freetype/freetype-${FT_VERSION}.tar.gz"
+tar xf "$work/ft.tar.gz" -C "$work"
+cmake -S "$work/freetype-${FT_VERSION}" -B "$work/ft-build" \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_C_COMPILER=/opt/rh/gcc-toolset-13/root/usr/bin/gcc \
+    -DBUILD_SHARED_LIBS=ON \
+    -DFT_DISABLE_ZLIB=TRUE -DFT_DISABLE_BZIP2=TRUE -DFT_DISABLE_PNG=TRUE \
+    -DFT_DISABLE_HARFBUZZ=TRUE -DFT_DISABLE_BROTLI=TRUE > /dev/null
+make -C "$work/ft-build" -j"$(nproc)" > /dev/null
+cp "$work/ft-build/libfreetype.so" "$dest/libfreetype.so"
 
 echo "Prepared $dest:"
 ls -la "$dest"

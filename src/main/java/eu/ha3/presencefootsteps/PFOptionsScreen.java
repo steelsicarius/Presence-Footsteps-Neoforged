@@ -132,11 +132,11 @@ class PFOptionsScreen extends Screen {
         rows.addChild(new StringWidget(WIDE_WIDTH, ROW_HEIGHT, Component.translatable("menu.pf.group.sound_packs"), font));
 
         disableAware.add(rows.addChild(Button.builder(Component.translatable("options.resourcepack"), button -> {
-            minecraft.setScreen(new PackSelectionScreen(
+            minecraft.setScreenAndShow(new PackSelectionScreen(
                     minecraft.getResourcePackRepository(),
                     repo -> {
                         minecraft.options.loadSelectedResourcePacks(repo);
-                        minecraft.setScreen(this);
+                        minecraft.setScreenAndShow(this);
                     },
                     minecraft.getResourcePackDirectory(),
                     Component.translatable("resourcePack.title")
@@ -283,7 +283,7 @@ class PFOptionsScreen extends Screen {
 
     @Override
     public void onClose() {
-        minecraft.setScreen(parent);
+        minecraft.setScreenAndShow(parent);
     }
 
     /**

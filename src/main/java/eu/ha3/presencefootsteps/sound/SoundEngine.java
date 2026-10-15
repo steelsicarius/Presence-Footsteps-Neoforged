@@ -117,7 +117,7 @@ public class SoundEngine implements PreparableReloadListener {
     public boolean isActive(Minecraft client) {
         return hasData()
                 && config.getEnabled()
-                && (client.isSingleplayer() || config.getEnabledMP());
+                && (PresenceFootsteps.isLocalServerUnpublished() || config.getEnabledMP());
     }
 
     private Stream<? extends Entity> getTargets(final Entity cameraEntity) {

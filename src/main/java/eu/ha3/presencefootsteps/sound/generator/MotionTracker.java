@@ -1,5 +1,6 @@
 package eu.ha3.presencefootsteps.sound.generator;
 
+import eu.ha3.presencefootsteps.PresenceFootsteps;
 import eu.ha3.presencefootsteps.config.Variator;
 import eu.ha3.presencefootsteps.sound.State;
 import eu.ha3.presencefootsteps.util.PlayerUtil;
@@ -65,7 +66,7 @@ public class MotionTracker {
             motionY = ply.getDeltaMovement().y;
             motionZ = ply.getDeltaMovement().z;
 
-            if (Minecraft.getInstance().isSingleplayer()) {
+            if (PresenceFootsteps.isLocalServerUnpublished()) {
                 distanceTraveled = ply.moveDist;
                 fallDistance = ply.fallDistance;
             } else {
