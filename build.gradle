@@ -11,18 +11,6 @@ base {
     archivesName = mod_id
 }
 
-// LWJGL aarch64 dev natives (see dependencies block at the bottom) are only
-// published on Maven Central; the ModDevGradle plugin does not add it. Gradle
-// resolves every artifact of a module from the first repository that has its
-// metadata (Mojang's mirror, which lacks the arm64 natives), so the LWJGL group
-// must be pinned to Central exclusively.
-repositories {
-    exclusiveContent {
-        forRepository { mavenCentral() }
-        filter { includeGroup "org.lwjgl" }
-    }
-}
-
 // Mojang ships Java 25 to end users in 26.1.2, so mods should target Java 25.
 java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
@@ -48,6 +36,13 @@ neoForge {
         configureEach {
             // This host has no IPv6 support, and another server already occupies the default port.
             systemProperty 'java.net.preferIPv4Stack', 'true'
+            // ARM64 Linux dev host: use the natives dir prepared by
+            // scripts/prepare-arm64-natives.sh (replaces LWJGL's libopenal.so,
+            // which needs GLIBCXX_3.4.30, with OL9's openal-soft build).
+            def arm64Natives = rootProject.file('.lwjgl-arm64-natives')
+            if (arm64Natives.exists()) {
+                systemProperty 'org.lwjgl.librarypath', arm64Natives.absolutePath
+            }
             // Recommended logging data for a userdev environment
             // The markers can be added/remove as needed separated by commas.
             // "SCAN": For mods scan.
@@ -103,19 +98,11 @@ idea {
     }
 }
 
-// Dev-only: LWJGL aarch64 natives so runClient can boot on ARM64 Linux dev hosts
-// (this machine). Minecraft's dependency metadata only ships x64 linux natives.
-// LWJGL 3.4+ picks the matching architecture at runtime from META-INF/<os>/<arch>/.
-// Keep lwjglVersion in sync with the LWJGL version Minecraft depends on (see
-// "./gradlew -q dependencies --configuration runtimeClasspath | grep lwjgl").
-dependencies {
-    def lwjglVersion = '3.4.1'
-    runtimeOnly "org.lwjgl:lwjgl:${lwjglVersion}:natives-linux-arm64"
-    runtimeOnly "org.lwjgl:lwjgl-freetype:${lwjglVersion}:natives-linux-arm64"
-    runtimeOnly "org.lwjgl:lwjgl-glfw:${lwjglVersion}:natives-linux-arm64"
-    runtimeOnly "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}:natives-linux-arm64"
-    runtimeOnly "org.lwjgl:lwjgl-openal:${lwjglVersion}:natives-linux-arm64"
-    runtimeOnly "org.lwjgl:lwjgl-opengl:${lwjglVersion}:natives-linux-arm64"
-    runtimeOnly "org.lwjgl:lwjgl-stb:${lwjglVersion}:natives-linux-arm64"
-    runtimeOnly "org.lwjgl:lwjgl-tinyfd:${lwjglVersion}:natives-linux-arm64"
-}
+// Dev-only, ARM64 Linux hosts: runClient loads LWJGL natives from
+// .lwjgl-arm64-natives/ (prepared by scripts/prepare-arm64-natives.sh).
+// The natives are NOT added to the classpath on purpose: LWJGL prefers
+// classpath resources over org.lwjgl.librarypath, and its SharedLibraryLoader
+// overwrites org.lwjgl.librarypath with its extraction dir when it extracts
+// anything. With no natives on the classpath, every module (including the
+// GLIBCXX-compatible openal-soft build for OL9) loads straight from the dir.
+// If the dir does not exist (e.g. x64 hosts), nothing is changed.

@@ -32,3 +32,4 @@ logs/
 ### Upstream Fabric sources (read-only reference, not part of this port) ###
 /Presence-Footsteps-1.26.1/
 "log cliente/"
+.lwjgl-arm64-natives/
