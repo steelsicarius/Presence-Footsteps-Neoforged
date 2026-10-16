@@ -1,0 +1,959 @@
+[12:35:10] [main/INFO]: JVM Uptime at startup: 3595ms
+[12:35:10] [main/INFO]: Starting FancyModLoader version 11.0.15 (CLIENT in PROD)
+[12:35:10] [main/INFO]: Game directory: C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2
+[12:35:11] [main/INFO]: Found 5 early service jars (out of 160) in 274ms
+[12:35:11] [main/INFO]: Loading FML Early Services:
+[12:35:11] [main/INFO]:  - C:/Users/steel/AppData/Roaming/ModrinthApp/meta/libraries/net/neoforged/fancymodloader/earlydisplay/11.0.15/earlydisplay-11.0.15.jar
+[12:35:11] [main/INFO]:  - mods/CrashAssistant-neoforge-26.1-1.11.12.jar
+[12:35:11] [main/INFO]:  - mods/automodpack-mc26.1.2-neoforge-4.0.6.jar
+[12:35:11] [main/INFO]:  - C:/Users/steel/AppData/Roaming/ModrinthApp/meta/libraries/net/neoforged/fancymodloader/loader/11.0.15/loader-11.0.15.jar
+[12:35:11] [main/INFO]:  - mods/sodium-neoforge-0.9.2+mc26.1.2.jar
+[12:35:11] [main/INFO]: Launching CrashAssistantApp (CrashAssistant-neoforge-26.1-1.11.12.jar)
+[12:35:12] [main/INFO]: Running graphics bootstrap plugin crash_assistant
+[12:35:12] [main/INFO]: Running graphics bootstrap plugin sodium
+[12:35:12] [main/INFO]: Searching for graphics cards...
+[12:35:12] [CrashAssistantApp process logger/INFO]: CrashAssistantApp process successfully started.
+[12:35:13] [main/INFO]: Found graphics adapter: AdapterInfo{vendor=NVIDIA, description='NVIDIA GeForce GTX 1660', adapterType=0x0000030B, openglIcdFilePath='C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_feedb8c0271ca811\nvoglv64.dll', openglIcdVersion=32.0.16.1742}
+[12:35:13] [main/WARN]: Sodium has applied one or more workarounds to prevent crashes or other issues on your system: [NVIDIA_THREADED_OPTIMIZATIONS_BROKEN]
+[12:35:13] [main/WARN]: This is not necessarily an issue, but it may result in certain features or optimizations being disabled. You can sometimes fix these issues by upgrading your graphics driver.
+[12:35:13] [main/INFO]: ImmediateWindowProvider not loading because splash screen is disabled
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Marking unmodified client jar as claimed to prevent loading: C:\Users\steel\AppData\Roaming\ModrinthApp\meta\versions\26.1.2-26.1.2.115\26.1.2-26.1.2.115.jar
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Failed to find common Minecraft classes and resources on the classpath. Assuming we're launching production.
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "minecraft-client-patched-26.1.2.115.jar" [locator: game locator, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "neoforge-26.1.2.115-universal.jar" [locator: game locator, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Prelaunching AutoModpack...
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Loaded config! took 39ms
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: AutoModpack self-updater is disabled in client config.
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: AutoModpack prelaunched! took 177ms
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "[admin]crashutilities-10.0.1.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "[API CPU-GPU LEAKS]cupboard-26.1-4.1.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "[forgematica lib] mafglib-0.5.6+mc26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "[forgematica lib]foxified-classtweaker-0.1.0-alpha.4.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "AsyncParticles-26.1.2.7+26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "attackthroughgrass-neoforge-2.1.1-26.1.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "BadOptimizations-2.4.1-26.1-forge.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "badpackets-neo-0.12.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "better_modlist-26.1.5.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "capecommand-neoforge-0.3.0-26.1.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "chat_heads-1.2.8-neoforge-26.1.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "clientsort-neoforge-3.102.6+26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "cloth-config-26.1.154.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "Clumps-neoforge-26.1.2-26.1.2.1.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "continuity-3.0.1-0.0.8.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "coolrain-26.1.2-NeoForge-1.0.0.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "disableinsecurechattoast-neoforge-mc26.1-1.2.1.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "entity_model_features_26.1-neoforge-3.2.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "entity_texture_features_26.1-neoforge-7.1.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "entityculling-neoforge-1.11.3-mc26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "EuphoriaPatcher-1.10.5-r5.9.3-neoforge.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "fast-ip-ping-v1.0.11-mc26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "ferritecore-9.0.0-neoforge.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "forgematica-0.5.1+mc26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "fwa+26.1.2-neoforge-1.2.38-patch.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "gpumemleakfix-26.1-1.9.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:13] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "highly_customizable_damage_numbers-neoforge-26.1-1.1.3.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "ImmediatelyFast-NeoForge-1.15.3+26.1.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "iris-neoforge-1.11.4+mc26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "Jade-mc26.1-NeoForge-26.1.11.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "jei-26.1.2-neoforge-29.37.0.99.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "lithium-neoforge-0.24.7+mc26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "modernfix-neoforge-5.27.24+mc26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "Moonrise-NeoForge-1.0.0+1234f5d.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "moreculling-neoforge-26.1.2-1.7.3.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "MouseTweaks-neoforge-mc26.1-2.31.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "nemos-inventory-sorting-NeoForge-26.1.2-1.18.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "netprodis-2.0.0+26.1.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "no-telemetry-1.10.0.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "NoChatReports-NEOFORGE-26.1-v2.19.0.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "obe+26.1.2-neoforge-1.1.45.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "packetfixer-neoforge-3.3.4-26.1.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "paginatedadvancements-2.8.2+26.1-neoforge.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "presencefootsteps-1.0.0.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "quick-pack-neoforge-1.5.0+26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "reeses-sodium-options-neoforge-2.2.3+mc26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "scribble-2.1.0+mc26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/ERROR]: Access transformer file accesstransformer.cfg provided by mod sodium_extra does not exist!
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "sodium-extra-neoforge-0.9.3+mc26.1.2.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "spark-1.10.187-neoforge(1).jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "threadtweak-26.1.2-NeoForge-1.0.0.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "voxy-server-side-neoforge.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "xaerominimap-neoforge-26.1.2-26.5.0.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:14] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "xaeroworldmap-neoforge-26.1.2-1.46.0.jar" [locator: {mods folder locator at C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\mods}, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/WARN]: Attempted to select a dependency jar for JarJar which was passed in as source: cloth_config. Using jar(mods/cloth-config-26.1.154.jar)
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found 29 dependencies adding them to mods collection
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found gamelibrary file "mixinextras-neoforge-0.5.5.jar" [parent: neoforge-26.1.2.115-universal.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "xz-1.10.jar" [parent: neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "fabric-api-base-2.0.3+b11575294c.jar" [parent: [forgematica lib] mafglib-0.5.6+mc26.1.2.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "class-tweaker-0.3.0-beta.2.jar" [parent: foxified-classtweaker-processor-0.1.0-alpha.4.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "net.neoforged.neoforge-coremods-26.1.2.115.jar" [parent: neoforge-26.1.2.115-universal.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "commons-pool2-2.12.0.jar" [parent: neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "foxified-classtweaker-processor-0.1.0-alpha.4.jar" [parent: [forgematica lib]foxified-classtweaker-0.1.0-alpha.4.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "greenlight-api-0.1.0+mc26.2.jar" [parent: sodium-extra-neoforge-0.9.3+mc26.1.2.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "xaerolib-neoforge-26.1.2-1.7.3.jar" [parent: xaerominimap-neoforge-26.1.2-26.5.0.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "TextPlaceholderAPI-neoforge-51d8f4bf77.jar" [parent: better_modlist-26.1.5.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "rocksdbjni-10.2.1.jar" [parent: neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "jcpp-1.4.14.jar" [parent: iris-neoforge-1.11.4+mc26.1.2.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "antlr4-runtime-4.13.1.jar" [parent: iris-neoforge-1.11.4+mc26.1.2.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "glsl-transformer-3.0.0-pre3.jar" [parent: iris-neoforge-1.11.4+mc26.1.2.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "TRender-1.0.17-26.1.2-neoforge-SNAPSHOT.jar" [parent: entityculling-neoforge-1.11.3-mc26.1.2.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "automodpack-mod.jar" [parent: automodpack-mc26.1.2-neoforge-4.0.6.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "common_tapestry-base-1.1.1+mc26.1.2.jar" [parent: scribble-2.1.0+mc26.1.2.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found gamelibrary file "mixinsquared-neoforge-0.3.7-beta.3.jar" [parent: AsyncParticles-26.1.2.7+26.1.2.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "MixinSquared-0.3.7-beta.3.jar" [parent: mixinsquared-neoforge-0.3.7-beta.3.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "conditional-mixin-neoforge-0.6.4.jar" [parent: forgematica-0.5.1+mc26.1.2.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "TRansition-1.0.26-26.1.2-neoforge-SNAPSHOT.jar" [parent: entityculling-neoforge-1.11.3-mc26.1.2.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "common_tapestry-config-1.1.1+mc26.1.2.jar" [parent: scribble-2.1.0+mc26.1.2.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "net.caffeinemc.sodium-neoforge-0.9.2+mc26.1.2-mod.jar" [parent: sodium-neoforge-0.9.2+mc26.1.2.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "fabric-networking-api-v1-6.3.1+054b5c7d4c.jar" [parent: [forgematica lib] mafglib-0.5.6+mc26.1.2.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "Reflect-1.6.2.jar" [parent: ImmediatelyFast-NeoForge-1.15.3+26.1.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "lwjgl-lmdb-3.4.1.jar" [parent: neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "lwjgl-zstd-3.4.1.jar" [parent: neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "jedis-5.1.0.jar" [parent: neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found library file "sqlite-jdbc-3.49.1.0.jar" [parent: voxy-server-side-neoforge.jar, locator: jarinjar]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "crash_assistant-neoforge.jar" [parent: CrashAssistant-neoforge-26.1-1.11.12.jar, locator: jarinjar, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found 1 dependencies adding them to mods collection
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found mod file "automodpack-mod.jar" [parent: automodpack-mc26.1.2-neoforge-4.0.6.jar, locator: pl.skidam.automodpack_loader_core.LazyModLocator@7afe5b03, reader: mod manifest]
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: Found 2 mod files for modid automodpack_mod, selecting automodpack-mod.jar as it is the most recent based on version data:
+	4.0.6 from automodpack-mod.jar
+	4.0.6 from automodpack-mod.jar
+[12:35:16] [ForkJoinPool.commonPool-worker-6/INFO]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		AsyncParticles 26.1.2.7 (asyncparticles)
+		Attack Through Grass 2.1.1 (attackthroughgrass)
+		AutoModpack 4.0.6 (automodpack_mod)
+		Bad Packets 0.12.2 (badpackets)
+		BadOptimizations 2.4.1 (badoptimizations)
+		Better ModList 26.1.5 (better_modlist)
+		Cape Command 0.3.0-26.1 (capecommand)
+		Chat Heads 1.2.8 (chat_heads)
+		ClientSort 3.102.6 (clientsort)
+		Cloth Config v26.1 API 26.1.154 (cloth_config)
+		Clumps 26.1.2.1 (clumps)
+		conditional mixin 0.6.4 (conditional_mixin)
+		Cool Rain 1.0.0 (coolrain)
+		Crash Assistant 1.11.12 (crash_assistant)
+		Crash Utilities 10.0.1 (crashutilities)
+		Cupboard mod 4.1 (cupboard)
+		DisableInsecureChatToast 1.2.1 (disableinsecurechattoast)
+		Entity Model Features 3.2.2 (entity_model_features)
+		Entity Texture Features 7.1 (entity_texture_features)
+		EntityCulling 1.11.3 (entityculling)
+		Euphoria Patcher 1.10.5-r5.9.3-neoforge (euphoria_patcher)
+		Fancy World Animations 1.2.38-patch.2 (fwa)
+		Fast IP Ping 1.0.11 (fastipping)
+		Ferrite Core 9.0.0 (ferritecore)
+		Forgematica 0.5.1+mc26.1.2 (forgematica)
+		Forgified Fabric API Base 2.0.3+b11575294c (fabric_api_base)
+		Forgified Fabric Networking API (v1) 6.3.1+054b5c7d4c (fabric_networking_api_v1)
+		FoxifiedClassTweaker 0.1.0-alpha.4 (foxified_classtweaker)
+		Gpu memory leak fix 1.9 (gpumemleakfix)
+		Highly Customizable Damage Numbers 1.1.3 (highly_customizable_damage_numbers)
+		ImmediatelyFast 1.15.3+26.1 (immediatelyfast)
+		Iris 1.11.4+mc26.1.2 (iris)
+		Jade 26.1.11+neoforge (jade)
+		Just Enough Items 29.37.0.99 (jei)
+		Lithium 0.24.7 (lithium)
+		MaFgLib 0.5.6+mc26.1.2 (mafglib)
+		Minecraft 26.1.2 (minecraft)
+		ModernFix 5.27.24+mc26.1.2 (modernfix)
+		Moonrise 1.0.0+1234f5d (moonrise)
+		More Culling 1.7.3 (moreculling)
+		Mouse Tweaks 2.31 (mousetweaks)
+		Nemo's Inventory Sorting 26.1.2-1.18 (nemos_inventory_sorting)
+		Neo-Voxy 0.3.3 (voxy)
+		NeoContinuity 3.0.1-0.0.8 (continuity)
+		NeoForge 26.1.2.115 (neoforge)
+		Network Protocol Disconnect 2.0.0 (netprodis)
+		No Chat Reports 26.1-v2.19.0 (nochatreports)
+		No Telemetry 1.10.0 (no_telemetry)
+		Optimized Block Entities 1.1.45 (obe)
+		PacketFixer 3.3.4 (packetfixer)
+		Paginated Advancements 2.8.2+26.1-neoforge (paginatedadvancements)
+		Placeholder API Neoforge 3.0.0-beta.2+26.1 (placeholder_api)
+		Presence Footsteps 1.0.0 (presencefootsteps)
+		quick-pack 1.5.0 (quick_pack)
+		Reese's Sodium Options 2.2.3+mc26.1.2 (reeses_sodium_options)
+		Scribble 2.1.0 (scribble)
+		Sodium 0.9.2+mc26.1.2 (sodium)
+		Sodium Extra 0.9.3+mc26.1.2 (sodium_extra)
+		spark 1.10.187 (spark)
+		Tapestry 1.1.1 (tapestry)
+		Tapestry Config 1.1.1 (tapestry_config)
+		ThreadTweak 1.0.0 (threadtweak)
+		TRansition 1.0.26 (transition)
+		TRender 1.0.17 (trender)
+		Voxy Server Side 0.14.0 (lss)
+		Xaero's Minimap 26.5.0 (xaerominimap)
+		Xaero's World Map 1.46.0 (xaeroworldmap)
+		XaeroLib 1.7.3 (xaerolib)
+[12:35:17] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/steel/AppData/Roaming/ModrinthApp/meta/libraries/net/fabricmc/sponge-mixin/0.17.4+mixin.0.8.7/sponge-mixin-0.17.4+mixin.0.8.7.jar Service=FML Env=CLIENT
+[12:35:17] [main/INFO]: Loading FML Plugins:
+[12:35:17] [main/INFO]:  - mods/sodium-extra-neoforge-0.9.3+mc26.1.2.jar > greenlight-api-0.1.0+mc26.2.jar
+[12:35:17] [main/INFO]:  - mods/neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar > lwjgl-zstd-3.4.1.jar
+[12:35:17] [main/INFO]:  - mods/neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar > jedis-5.1.0.jar
+[12:35:17] [main/INFO]:  - mods/[forgematica lib]foxified-classtweaker-0.1.0-alpha.4.jar > foxified-classtweaker-processor-0.1.0-alpha.4.jar > class-tweaker-0.3.0-beta.2.jar
+[12:35:17] [main/INFO]:  - mods/neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar > commons-pool2-2.12.0.jar
+[12:35:17] [main/INFO]:  - mods/[forgematica lib]foxified-classtweaker-0.1.0-alpha.4.jar > foxified-classtweaker-processor-0.1.0-alpha.4.jar
+[12:35:17] [main/INFO]:  - mods/iris-neoforge-1.11.4+mc26.1.2.jar > antlr4-runtime-4.13.1.jar
+[12:35:17] [main/INFO]:  - mods/neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar > xz-1.10.jar
+[12:35:17] [main/INFO]:  - mods/voxy-server-side-neoforge.jar > sqlite-jdbc-3.49.1.0.jar
+[12:35:17] [main/INFO]:  - mods/neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar > lwjgl-lmdb-3.4.1.jar
+[12:35:17] [main/INFO]:  - mods/iris-neoforge-1.11.4+mc26.1.2.jar > jcpp-1.4.14.jar
+[12:35:17] [main/INFO]:  - mods/iris-neoforge-1.11.4+mc26.1.2.jar > glsl-transformer-3.0.0-pre3.jar
+[12:35:17] [main/INFO]:  - mods/AsyncParticles-26.1.2.7+26.1.2.jar > mixinsquared-neoforge-0.3.7-beta.3.jar > MixinSquared-0.3.7-beta.3.jar
+[12:35:17] [main/INFO]:  - mods/neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar > rocksdbjni-10.2.1.jar
+[12:35:17] [main/INFO]:  - mods/ImmediatelyFast-NeoForge-1.15.3+26.1.jar > Reflect-1.6.2.jar
+[12:35:17] [main/INFO]:  - ~libraries/net/neoforged/neoforge/26.1.2.115/neoforge-26.1.2.115-universal.jar > net.neoforged.neoforge-coremods-26.1.2.115.jar
+[12:35:17] [main/INFO]: Loaded 2 ClassTweaker file(s), tracking 11 target class(es)
+[12:35:17] [main/INFO]: Building game content classloader:
+ - asyncparticles (jar(mods/AsyncParticles-26.1.2.7+26.1.2.jar))
+ - attackthroughgrass (jar(mods/attackthroughgrass-neoforge-2.1.1-26.1.jar))
+ - automodpack_mod (jar(mods/automodpack-mc26.1.2-neoforge-4.0.6.jar > automodpack-mod.jar))
+ - badoptimizations (jar(mods/BadOptimizations-2.4.1-26.1-forge.jar))
+ - badpackets (jar(mods/badpackets-neo-0.12.2.jar))
+ - better_modlist (jar(mods/better_modlist-26.1.5.jar))
+ - capecommand (jar(mods/capecommand-neoforge-0.3.0-26.1.jar))
+ - chat_heads (jar(mods/chat_heads-1.2.8-neoforge-26.1.jar))
+ - clientsort (jar(mods/clientsort-neoforge-3.102.6+26.1.2.jar))
+ - cloth_config (jar(mods/cloth-config-26.1.154.jar))
+ - clumps (jar(mods/Clumps-neoforge-26.1.2-26.1.2.1.jar))
+ - conditional_mixin (jar(mods/forgematica-0.5.1+mc26.1.2.jar > conditional-mixin-neoforge-0.6.4.jar))
+ - continuity (jar(mods/continuity-3.0.1-0.0.8.jar))
+ - coolrain (jar(mods/coolrain-26.1.2-NeoForge-1.0.0.jar))
+ - crash_assistant (jar(mods/CrashAssistant-neoforge-26.1-1.11.12.jar > crash_assistant-neoforge.jar))
+ - crashutilities (jar(mods/[admin]crashutilities-10.0.1.jar))
+ - cupboard (jar(mods/[API CPU-GPU LEAKS]cupboard-26.1-4.1.jar))
+ - disableinsecurechattoast (jar(mods/disableinsecurechattoast-neoforge-mc26.1-1.2.1.jar))
+ - entity_model_features (jar(mods/entity_model_features_26.1-neoforge-3.2.2.jar))
+ - entity_texture_features (jar(mods/entity_texture_features_26.1-neoforge-7.1.jar))
+ - entityculling (jar(mods/entityculling-neoforge-1.11.3-mc26.1.2.jar))
+ - euphoria_patcher (jar(mods/EuphoriaPatcher-1.10.5-r5.9.3-neoforge.jar))
+ - fabric_api_base (jar(mods/[forgematica lib] mafglib-0.5.6+mc26.1.2.jar > fabric-api-base-2.0.3+b11575294c.jar))
+ - fabric_networking_api_v1 (jar(mods/[forgematica lib] mafglib-0.5.6+mc26.1.2.jar > fabric-networking-api-v1-6.3.1+054b5c7d4c.jar))
+ - fastipping (jar(mods/fast-ip-ping-v1.0.11-mc26.1.2.jar))
+ - ferritecore (jar(mods/ferritecore-9.0.0-neoforge.jar))
+ - forgematica (jar(mods/forgematica-0.5.1+mc26.1.2.jar))
+ - foxified_classtweaker (jar(mods/[forgematica lib]foxified-classtweaker-0.1.0-alpha.4.jar))
+ - fwa (jar(mods/fwa+26.1.2-neoforge-1.2.38-patch.2.jar))
+ - gpumemleakfix (jar(mods/gpumemleakfix-26.1-1.9.jar))
+ - highly_customizable_damage_numbers (jar(mods/highly_customizable_damage_numbers-neoforge-26.1-1.1.3.jar))
+ - immediatelyfast (jar(mods/ImmediatelyFast-NeoForge-1.15.3+26.1.jar))
+ - iris (jar(mods/iris-neoforge-1.11.4+mc26.1.2.jar))
+ - jade (jar(mods/Jade-mc26.1-NeoForge-26.1.11.jar))
+ - jei (jar(mods/jei-26.1.2-neoforge-29.37.0.99.jar))
+ - lithium (jar(mods/lithium-neoforge-0.24.7+mc26.1.2.jar))
+ - lss (jar(mods/voxy-server-side-neoforge.jar))
+ - mafglib (jar(mods/[forgematica lib] mafglib-0.5.6+mc26.1.2.jar))
+ - minecraft (jar(~libraries/net/neoforged/minecraft-client-patched/26.1.2.115/minecraft-client-patched-26.1.2.115.jar))
+ - mixinextras.neoforge (jar(~libraries/net/neoforged/neoforge/26.1.2.115/neoforge-26.1.2.115-universal.jar > mixinextras-neoforge-0.5.5.jar))
+ - mixinsquared.neoforge.beta._3 (jar(mods/AsyncParticles-26.1.2.7+26.1.2.jar > mixinsquared-neoforge-0.3.7-beta.3.jar))
+ - modernfix (jar(mods/modernfix-neoforge-5.27.24+mc26.1.2.jar))
+ - moonrise (jar(mods/Moonrise-NeoForge-1.0.0+1234f5d.jar))
+ - moreculling (jar(mods/moreculling-neoforge-26.1.2-1.7.3.jar))
+ - mousetweaks (jar(mods/MouseTweaks-neoforge-mc26.1-2.31.jar))
+ - nemos_inventory_sorting (jar(mods/nemos-inventory-sorting-NeoForge-26.1.2-1.18.jar))
+ - neoforge (jar(~libraries/net/neoforged/neoforge/26.1.2.115/neoforge-26.1.2.115-universal.jar))
+ - net.neoforged.fml.generated (empty(VirtualJar/net.neoforged.fml.generated))
+ - netprodis (jar(mods/netprodis-2.0.0+26.1.jar))
+ - no_telemetry (jar(mods/no-telemetry-1.10.0.jar))
+ - nochatreports (jar(mods/NoChatReports-NEOFORGE-26.1-v2.19.0.jar))
+ - obe (jar(mods/obe+26.1.2-neoforge-1.1.45.jar))
+ - packetfixer (jar(mods/packetfixer-neoforge-3.3.4-26.1.jar))
+ - paginatedadvancements (jar(mods/paginatedadvancements-2.8.2+26.1-neoforge.jar))
+ - placeholder_api (jar(mods/better_modlist-26.1.5.jar > TextPlaceholderAPI-neoforge-51d8f4bf77.jar))
+ - presencefootsteps (jar(mods/presencefootsteps-1.0.0.jar))
+ - quick_pack (jar(mods/quick-pack-neoforge-1.5.0+26.1.2.jar))
+ - reeses_sodium_options (jar(mods/reeses-sodium-options-neoforge-2.2.3+mc26.1.2.jar))
+ - scribble (jar(mods/scribble-2.1.0+mc26.1.2.jar))
+ - sodium (jar(mods/sodium-neoforge-0.9.2+mc26.1.2.jar > net.caffeinemc.sodium-neoforge-0.9.2+mc26.1.2-mod.jar))
+ - sodium_extra (jar(mods/sodium-extra-neoforge-0.9.3+mc26.1.2.jar))
+ - spark (jar(mods/spark-1.10.187-neoforge(1).jar))
+ - tapestry (jar(mods/scribble-2.1.0+mc26.1.2.jar > common_tapestry-base-1.1.1+mc26.1.2.jar))
+ - tapestry_config (jar(mods/scribble-2.1.0+mc26.1.2.jar > common_tapestry-config-1.1.1+mc26.1.2.jar))
+ - threadtweak (jar(mods/threadtweak-26.1.2-NeoForge-1.0.0.jar))
+ - transition (jar(mods/entityculling-neoforge-1.11.3-mc26.1.2.jar > TRansition-1.0.26-26.1.2-neoforge-SNAPSHOT.jar))
+ - trender (jar(mods/entityculling-neoforge-1.11.3-mc26.1.2.jar > TRender-1.0.17-26.1.2-neoforge-SNAPSHOT.jar))
+ - voxy (jar(mods/neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar))
+ - xaerolib (jar(mods/xaerominimap-neoforge-26.1.2-26.5.0.jar > xaerolib-neoforge-26.1.2-1.7.3.jar))
+ - xaerominimap (jar(mods/xaerominimap-neoforge-26.1.2-26.5.0.jar))
+ - xaeroworldmap (jar(mods/xaeroworldmap-neoforge-26.1.2-1.46.0.jar))
+[12:35:17] [main/INFO]: Built game content classloader in 158ms
+[12:35:18] [main/INFO]: Mixin config sodium-frapi.mixins.json from jar(mods/sodium-neoforge-0.9.2+mc26.1.2.jar) > jar(mods/sodium-neoforge-0.9.2+mc26.1.2.jar > net.caffeinemc.sodium-neoforge-0.9.2+mc26.1.2-mod.jar) not applied as required mod 'fabric_renderer_api_v1' is missing
+[12:35:18] [main/INFO]: Loaded configuration file for Sodium Extra: 26 options available, 0 override(s) found
+[12:35:18] [main/INFO]: Option 'mixin.minimal_nonvanilla.world.block_entity_ticking.support_cache' requires 'mixin.world.block_entity_ticking=true' but found 'false'. Setting 'mixin.minimal_nonvanilla.world.block_entity_ticking.support_cache=false'.
+[12:35:18] [main/INFO]: Option 'mixin.experimental.entity.block_caching.suffocation' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.suffocation=false'.
+[12:35:18] [main/INFO]: Option 'mixin.experimental.entity.block_caching.block_support' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_support=false'.
+[12:35:18] [main/INFO]: Option 'mixin.block.hopper' requires 'mixin.util.entity_movement_tracking=true' but found 'false'. Setting 'mixin.block.hopper=false'.
+[12:35:18] [main/INFO]: Option 'mixin.entity.projectile_projectile_collisions' requires 'mixin.chunk.entity_class_groups=true' but found 'false'. Setting 'mixin.entity.projectile_projectile_collisions=false'.
+[12:35:18] [main/INFO]: Option 'mixin.experimental.entity.block_caching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching=false'.
+[12:35:18] [main/INFO]: Loaded configuration file for Lithium: 171 options available, 28 override(s) found.
+[12:35:18] [main/WARN]: Reference map 'xaerolib.refmap.json' for xaerolib.mixins.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/WARN]: Reference map 'gpumemleakfix.refmap.json' for gpumemleakfix.mixins.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/WARN]: Reference map 'clumps.refmap.json' for clumps.mixins.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/WARN]: Reference map 'xaeroworldmap.refmap.json' for xaeroworldmap.mixins.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/INFO]: Loaded configuration file for ModernFix [unknown]: 76 options available, 3 override(s) found
+[12:35:18] [main/WARN]: Option 'mixin.perf.release_protochunks' overriden (by mods [moonrise]) to 'false'
+[12:35:18] [main/WARN]: Option 'mixin.perf.thread_priorities' overriden (by mods [threadtweak]) to 'false'
+[12:35:18] [main/WARN]: Option 'mixin.perf.dynamic_dfu' overriden (by mods [litematica]) to 'false'
+[12:35:18] [main/INFO]: Applying Nashorn fix
+[12:35:18] [main/WARN]: Reference map 'iris.refmap.json' for mixins.iris.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/WARN]: Reference map 'iris.refmap.json' for mixins.iris.vertexformat.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/WARN]: Reference map 'iris.refmap.json' for mixins.iris.compat.sodium.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/WARN]: Reference map 'highly_customizable_damage_numbers.refmap.json' for highly_customizable_damage_numbers.mixins.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/WARN]: Reference map 'quick_pack.refmap.json' for quick-pack.mixins.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/INFO]: Loaded configuration file for Sodium: 37 options available, 1 override(s) found
+[12:35:18] [main/WARN]: Reference map 'nochatreports.refmap.json' for mixins/common/nochatreports.mixins.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/WARN]: Reference map 'entityculling.refmap.mixins.json' for entityculling.mixins.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/WARN]: Mod moonrise disabled FerriteCore option replaceNeighborLookup
+[12:35:18] [main/WARN]: Mod moonrise disabled FerriteCore option replacePropertyMap
+[12:35:18] [main/WARN]: Reference map 'cupboard.refmap.json' for cupboard.mixins.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/WARN]: Reference map '' for nemos_inventory_sorting.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[12:35:18] [main/INFO]: Config version: 6
+[12:35:18] [main/INFO]: BadOptimizations config dump:
+[12:35:18] [main/INFO]: enable_toast_optimizations: true
+[12:35:18] [main/INFO]: ignore_mod_incompatibilities: false
+[12:35:18] [main/INFO]: lightmap_time_change_needed_for_update: 80
+[12:35:18] [main/INFO]: enable_lightmap_caching: true
+[12:35:18] [main/INFO]: enable_particle_manager_optimization: true
+[12:35:18] [main/INFO]: enable_entity_renderer_caching: true
+[12:35:18] [main/INFO]: log_config: true
+[12:35:18] [main/INFO]: enable_remove_redundant_fov_calculations: true
+[12:35:18] [main/INFO]: config_version: 6
+[12:35:18] [main/INFO]: enable_sky_angle_caching_in_worldrenderer: true
+[12:35:18] [main/INFO]: enable_block_entity_renderer_caching: true
+[12:35:18] [main/INFO]: skycolor_time_change_needed_for_update: 3
+[12:35:18] [main/INFO]: enable_entity_flag_caching: true
+[12:35:18] [main/INFO]: ignore_mod_cache_hooks: false
+[12:35:18] [main/INFO]: enable_debug_renderer_disable_if_not_needed: true
+[12:35:18] [main/INFO]: enable_sky_color_caching: true
+[12:35:18] [main/INFO]: enable_remove_tutorial_if_not_demo: true
+[12:35:18] [main/INFO]: show_f3_text: true
+[12:35:18] [main/INFO]: Force-disabling mixin 'ai.poi.PoiManagerMixin' as rule 'mixin.ai.poi' (added by mods [moonrise]) disables it and children
+[12:35:18] [main/INFO]: Force-disabling mixin 'ai.poi.PoiSectionMixin' as rule 'mixin.ai.poi' (added by mods [moonrise]) disables it and children
+[12:35:18] [main/INFO]: Force-disabling mixin 'ai.poi.SectionStorageMixin' as rule 'mixin.ai.poi' (added by mods [moonrise]) disables it and children
+[12:35:18] [main/INFO]: Force-disabling mixin 'ai.poi.fast_portals.PoiManagerMixin' as rule 'mixin.ai.poi' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'ai.poi.fast_portals.PortalForcerMixin' as rule 'mixin.ai.poi' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'ai.poi.tasks.AcquirePoiMixin' as rule 'mixin.ai.poi' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'ai.poi.tasks.LocateHidingPlaceMixin' as rule 'mixin.ai.poi' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'ai.poi.tasks.RaiderEntityAttackHomeGoalMixin' as rule 'mixin.ai.poi' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'alloc.deep_passengers.EntityMixin' as rule 'mixin.alloc.deep_passengers' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'alloc.entity_tracker.ChunkMap$TrackedEntityMixin' as rule 'mixin.alloc.entity_tracker' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'block.flatten_states.FluidStateMixin' as rule 'mixin.block.flatten_states' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'chunk.entity_class_groups.ClassInstanceMultiMapMixin' as rule 'mixin.chunk.entity_class_groups' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'chunk.no_validation.SimpleBitStorageMixin' as rule 'mixin.chunk.no_validation' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'chunk.no_validation.ZeroBitStorageMixin' as rule 'mixin.chunk.no_validation' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'collections.chunk_tickets.SortedArraySetMixin' as rule 'mixin.collections.chunk_tickets' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'collections.entity_ticking.EntityTickListMixin' as rule 'mixin.collections.entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.collisions.intersection.EntityGetterMixin' as rule 'mixin.entity.collisions.intersection' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.collisions.intersection.LevelMixin' as rule 'mixin.entity.collisions.intersection' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.collisions.movement.EntityMixin' as rule 'mixin.entity.collisions.movement' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.collisions.unpushable_cramming.AbstractBoatMixin' as rule 'mixin.entity.collisions.unpushable_cramming' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.collisions.unpushable_cramming.EntityMixin' as rule 'mixin.entity.collisions.unpushable_cramming' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.collisions.unpushable_cramming.EntitySectionMixin' as rule 'mixin.entity.collisions.unpushable_cramming' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.collisions.unpushable_cramming.EntitySelectorMixin' as rule 'mixin.entity.collisions.unpushable_cramming' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.collisions.unpushable_cramming.LevelMixin' as rule 'mixin.entity.collisions.unpushable_cramming' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.collisions.unpushable_cramming.LivingEntityMixin' as rule 'mixin.entity.collisions.unpushable_cramming' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.collisions.unpushable_cramming.OldMinecartBehaviorMixin' as rule 'mixin.entity.collisions.unpushable_cramming' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.replace_entitytype_predicates.ArmorStandMixin' as rule 'mixin.entity.replace_entitytype_predicates' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.replace_entitytype_predicates.GolemRandomStrollInVillageGoalMixin' as rule 'mixin.entity.replace_entitytype_predicates' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.replace_entitytype_predicates.LlamaFollowCaravanGoalMixin' as rule 'mixin.entity.replace_entitytype_predicates' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'entity.replace_entitytype_predicates.OldMinecartBehaviorMixin' as rule 'mixin.entity.replace_entitytype_predicates' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'math.fast_blockpos.BlockPosMixin' as rule 'mixin.math.fast_blockpos' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'math.fast_blockpos.DirectionMixin' as rule 'mixin.math.fast_blockpos' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'math.fast_util.AABBMixin' as rule 'mixin.math.fast_util' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'math.fast_util.AxisCycleDirectionMixin$BackwardMixin' as rule 'mixin.math.fast_util' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'math.fast_util.AxisCycleDirectionMixin$ForwardMixin' as rule 'mixin.math.fast_util' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'math.fast_util.DirectionMixin' as rule 'mixin.math.fast_util' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'minimal_nonvanilla.collisions.empty_space.ArrayVoxelShapeInvoker' as rule 'mixin.minimal_nonvanilla.collisions.empty_space' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'minimal_nonvanilla.collisions.empty_space.BitSetDiscreteVoxelShapeAccessor' as rule 'mixin.minimal_nonvanilla.collisions.empty_space' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'minimal_nonvanilla.collisions.empty_space.LevelMixin' as rule 'mixin.minimal_nonvanilla.collisions.empty_space' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'minimal_nonvanilla.spawning.EntitySectionAccessor' as rule 'mixin.minimal_nonvanilla.spawning' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'minimal_nonvanilla.spawning.EntitySectionStorageMixin' as rule 'mixin.minimal_nonvanilla.spawning' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'minimal_nonvanilla.spawning.PersistentEntitySectionManagerAccessor' as rule 'mixin.minimal_nonvanilla.spawning' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'minimal_nonvanilla.spawning.ServerChunkCacheMixin' as rule 'mixin.minimal_nonvanilla.spawning' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'minimal_nonvanilla.spawning.ServerLevelAccessor' as rule 'mixin.minimal_nonvanilla.spawning' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'minimal_nonvanilla.world.expiring_chunk_tickets.TicketStorageMixin' as rule 'mixin.minimal_nonvanilla.world.expiring_chunk_tickets' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'shapes.blockstate_cache.BlockMixin' as rule 'mixin.shapes.blockstate_cache' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'shapes.optimized_matching.ShapesMixin' as rule 'mixin.shapes.optimized_matching' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'shapes.specialized_shapes.ShapesMixin' as rule 'mixin.shapes.specialized_shapes' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'shapes.specialized_shapes.VoxelShapeMixin' as rule 'mixin.shapes.specialized_shapes' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'util.block_tracking.BlockStateBaseMixin' as rule 'mixin.util.block_tracking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'util.block_tracking.LevelChunkSection$BlockCounterMixin' as rule 'mixin.util.block_tracking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'util.block_tracking.LevelChunkSectionMixin' as rule 'mixin.util.block_tracking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'util.entity_movement_tracking.EntitySectionMixin' as rule 'mixin.util.entity_movement_tracking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'util.entity_movement_tracking.PersistentEntitySectionManagerAccessor' as rule 'mixin.util.entity_movement_tracking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'util.entity_movement_tracking.ServerEntityManagerListenerMixin' as rule 'mixin.util.entity_movement_tracking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'util.entity_movement_tracking.ServerLevelAccessor' as rule 'mixin.util.entity_movement_tracking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.chunk_tickable.LevelMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.BlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.LevelChunkMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.LevelMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.ServerLevelMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.WrappedBlockEntityTickInvokerAccessor' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.brewing_stand.BrewingStandBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.campfire.CampfireBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.campfire.lit.CampfireBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.campfire.unlit.CampfireBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.crafter.CrafterBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.furnace.AbstractFurnaceBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.hopper.HopperBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.sculk_catalyst.SculkCatalystBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.sculk_catalyst.SculkSpreaderMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.sculk_sensor_shrieker.CalibratedSculkSensorBlockMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.sculk_sensor_shrieker.SculkSensorBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.sculk_sensor_shrieker.SculkSensorBlockMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.sculk_sensor_shrieker.SculkShriekerBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.sculk_sensor_shrieker.SculkShriekerBlockMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.sculk_sensor_shrieker.VibrationSystemListenerMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.shulker_box.ShulkerBoxBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.world_border.DirectBlockEntityTickInvokerMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.chunk_access.ChunkHolderMixin' as rule 'mixin.world.chunk_access' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.chunk_access.GenerationChunkHolderAccessor' as rule 'mixin.world.chunk_access' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.chunk_access.LevelMixin' as rule 'mixin.world.chunk_access' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.chunk_access.ServerChunkCacheMixin' as rule 'mixin.world.chunk_access' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.chunk_ticking.random_block_ticking.LevelChunkSection$BlockCounterMixin' as rule 'mixin.world.chunk_ticking.random_block_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.chunk_ticking.random_block_ticking.LevelChunkSectionMixin' as rule 'mixin.world.chunk_ticking.random_block_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.chunk_ticking.random_block_ticking.PalettedContainerMixin' as rule 'mixin.world.chunk_ticking.random_block_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.chunk_ticking.random_block_ticking.ServerLevelMixin' as rule 'mixin.world.chunk_ticking.random_block_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.explosions.block_raycast.ServerExplosionMixin' as rule 'mixin.world.explosions.block_raycast' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.explosions.block_raycast.skip_air.ServerExplosionMixin' as rule 'mixin.world.explosions.block_raycast' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.explosions.block_raycast.skip_air.no_air_counting.ServerLevelMixin' as rule 'mixin.world.explosions.block_raycast' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.temperature_cache.BiomeMixin' as rule 'mixin.world.temperature_cache' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.tick_scheduler.LevelChunkTicksMixin' as rule 'mixin.world.tick_scheduler' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'chunk.entity_class_groups.ClientLevelMixin' as rule 'mixin.chunk.entity_class_groups' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.chest_animation.ChestBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/INFO]: Force-disabling mixin 'world.block_entity_ticking.sleeping.chest_animation.EnderChestBlockEntityMixin' as rule 'mixin.world.block_entity_ticking' (added by mods [moonrise]) disables it and children
+[12:35:19] [main/WARN]: Error loading class: com/portingdeadmods/cable_facades/events/GameClientEvents$2 (java.lang.ClassNotFoundException: com.portingdeadmods.cable_facades.events.GameClientEvents$2)
+[12:35:19] [main/WARN]: Error loading class: com/direwolf20/justdirethings/client/renderers/OurRenderTypes (java.lang.ClassNotFoundException: com.direwolf20.justdirethings.client.renderers.OurRenderTypes)
+[12:35:19] [main/WARN]: Error loading class: mekanism/client/render/entity/RenderFlame (java.lang.ClassNotFoundException: mekanism.client.render.entity.RenderFlame)
+[12:35:19] [main/WARN]: Error loading class: mekanism/client/render/armor/MekaSuitArmor (java.lang.ClassNotFoundException: mekanism.client.render.armor.MekaSuitArmor)
+[12:35:19] [main/WARN]: Error loading class: mekanism/client/render/lib/effect/BillboardingEffectRenderer (java.lang.ClassNotFoundException: mekanism.client.render.lib.effect.BillboardingEffectRenderer)
+[12:35:19] [main/WARN]: Error loading class: blusunrize/immersiveengineering/client/utils/IEGLShaders (java.lang.ClassNotFoundException: blusunrize.immersiveengineering.client.utils.IEGLShaders)
+[12:35:20] [main/WARN]: Error loading class: net/caffeinemc/sodium/client/render/chunk/compile/pipeline/BlockRenderer (java.lang.ClassNotFoundException: net.caffeinemc.sodium.client.render.chunk.compile.pipeline.BlockRenderer)
+[12:35:20] [main/WARN]: @Mixin target net/caffeinemc/sodium/client/render/chunk/compile/pipeline/BlockRenderer was not found fwa.mixins.json:compat.sodium.BlockRendererMixin from mod fwa
+[12:35:20] [main/WARN]: Error loading class: me/jellysquid/mods/sodium/client/render/chunk/compile/pipeline/BlockRenderer (java.lang.ClassNotFoundException: me.jellysquid.mods.sodium.client.render.chunk.compile.pipeline.BlockRenderer)
+[12:35:20] [main/WARN]: @Mixin target me/jellysquid/mods/sodium/client/render/chunk/compile/pipeline/BlockRenderer was not found fwa.mixins.json:compat.sodium.BlockRendererMixin from mod fwa
+[12:35:20] [main/WARN]: Force-disabling mixin 'features.render.world.sky.LevelRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[12:35:20] [main/WARN]: Error loading class: net/caffeinemc/mods/sodium/client/gui/SodiumOptionsGUI (java.lang.ClassNotFoundException: net.caffeinemc.mods.sodium.client.gui.SodiumOptionsGUI)
+[12:35:20] [main/WARN]: Mixin malte0811.ferritecore.mixin.fastmap.FastMapStateHolderMixin is disabled by config
+[12:35:20] [main/WARN]: Mixin malte0811.ferritecore.mixin.fastmap.StateDefinitionMixin is disabled by config
+[12:35:20] [main/WARN]: Error loading class: com/progwml6/ironchest/client/screen/IronChestScreen (java.lang.ClassNotFoundException: com.progwml6.ironchest.client.screen.IronChestScreen)
+[12:35:20] [main/WARN]: @Mixin target com.progwml6.ironchest.client.screen.IronChestScreen was not found nemos_inventory_sorting.neoforge.mixins.json:NeoForgeIronChestScreenMixin from mod nemos_inventory_sorting
+[12:35:20] [main/WARN]: Error loading class: noobanidus/mods/lootr/common/block/entity/LootrChestBlockEntity (java.lang.ClassNotFoundException: noobanidus.mods.lootr.common.block.entity.LootrChestBlockEntity)
+[12:35:20] [main/WARN]: Error loading class: noobanidus/mods/lootr/common/block/entity/LootrShulkerBoxBlockEntity (java.lang.ClassNotFoundException: noobanidus.mods.lootr.common.block.entity.LootrShulkerBoxBlockEntity)
+[12:35:20] [main/WARN]: Error loading class: net/minecraft/client/renderer/rendertype/PreparedRenderType (java.lang.ClassNotFoundException: net.minecraft.client.renderer.rendertype.PreparedRenderType)
+[12:35:20] [main/INFO]: Wrapping mixin service for asyncparticles.target-modifier.mixins.json so that we can modify target classes.
+[12:35:20] [main/INFO]: Redirecting IClassBytecodeProvider#getClassNode for fun.qu_an.minecraft.asyncparticles.client.coremod.mixin_extension.class_adjuster.mixin.AsyncParticlesGenerated$fun$_qu_an$_minecraft$_asyncparticles$_client$_mixin$_conditional$_MixinParticles_LockRequired_Tick
+[12:35:20] [main/INFO]: Redirecting IClassBytecodeProvider#getClassNode for fun.qu_an.minecraft.asyncparticles.client.coremod.mixin_extension.class_adjuster.mixin.AsyncParticlesGenerated$fun$_qu_an$_minecraft$_asyncparticles$_client$_mixin$_conditional$_Mixin_ReplaceRandom
+[12:35:20] [main/INFO]: Redirecting IClassBytecodeProvider#getClassNode for fun.qu_an.minecraft.asyncparticles.client.coremod.mixin_extension.class_adjuster.mixin.AsyncParticlesGenerated$fun$_qu_an$_minecraft$_asyncparticles$_client$_mixin$_conditional$_MixinParticles_LockRequired_Extract
+[12:35:20] [main/INFO]: Redirecting IClassBytecodeProvider#getClassNode for fun.qu_an.minecraft.asyncparticles.client.coremod.mixin_extension.class_adjuster.mixin.AsyncParticlesGenerated$fun$_qu_an$_minecraft$_asyncparticles$_client$_mixin$_conditional$_MixinParticles_LockProvider
+[12:35:20] [main/INFO]: Redirecting IClassBytecodeProvider#getClassNode for fun.qu_an.minecraft.asyncparticles.client.coremod.mixin_extension.class_adjuster.mixin.AsyncParticlesGenerated$fun$_qu_an$_minecraft$_asyncparticles$_client$_mixin$_conditional$_MixinParticles_LightCacheNoRefresh
+[12:35:20] [main/INFO]: Redirecting IClassBytecodeProvider#getClassNode for fun.qu_an.minecraft.asyncparticles.client.coremod.mixin_extension.class_adjuster.mixin.AsyncParticlesGenerated$fun$_qu_an$_minecraft$_asyncparticles$_client$_mixin$_conditional$_MixinAsyncTick_AsyncTickableParticleGroup
+[12:35:20] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[12:35:21] [main/INFO]: ThreadTweak config initialized
+[12:35:21] [main/INFO]: [com.euphoriapatches.euphoria_patcher.EuphoriaPatcher:<init>:58]: 
+Euphoria Patcher:
+[12:35:22] [main/INFO]: EuphoriaPatcher: [UPDATE CHECKER] The EuphoriaPatcher Mod is up to date
+[12:35:22] [main/INFO]: EuphoriaPatcher: Polishing the invisible walls...
+[12:35:22] [main/INFO]: EuphoriaPatcher: EuphoriaPatches_1.10.5 is already installed.
+[12:35:22] [main/INFO]: [com.euphoriapatches.euphoria_patcher.logging.EuphoriaLogger:log:139]: 
+ 
+EuphoriaPatcher: Thank you for using Euphoria Patches - SpacEagle17
+
+ 
+[12:35:23] [Datafixer Bootstrap/INFO]: 294 Datafixer optimizations took 517 milliseconds
+[12:35:24] [pool-10-thread-1/INFO]: ModernFix reached bootstrap stage (18.62 s after launch)
+[12:35:24] [pool-10-thread-1/WARN]: Method overwrite conflict for equals in moonrise.mixins.json:blockstate_propertyaccess.PropertyMixin from mod moonrise, previously written by org.embeddedt.modernfix.common.mixin.perf.model_optimizations.PropertyMixin. Skipping method.
+[12:35:29] [pool-10-thread-1/INFO]: Vanilla bootstrap took 5556 milliseconds
+[12:35:29] [modloading-worker-0/INFO]: [dev.tr7zw.trender.gui.impl.client.LibGuiClient:onInitializeClient:37]: [TRender] Initializing Client...
+[12:35:29] [modloading-worker-0/INFO]: NeoForge mod loading, version 26.1.2.115, for MC 26.1.2
+[12:35:29] [modloading-worker-0/INFO]: Initialising cape command
+[12:35:29] [modloading-worker-0/INFO]: Trying to load config, if it exists
+[12:35:29] [modloading-worker-0/INFO]: Registering cape command
+[12:35:29] [modloading-worker-0/INFO]: Registering server network handlers
+[12:35:30] [modloading-worker-0/INFO]: [FWA] Fancy World Animations initialized!
+[12:35:30] [modloading-worker-0/INFO]: Registering client network handlers
+[12:35:30] [modloading-worker-0/INFO]: Sodium: [0.9.2+mc26.1.2], Iris: [1.11.4+mc26.1.2]
+[12:35:30] [modloading-worker-0/INFO]: Assigning MaLiLib Pipelines to Iris Programs:
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/translucent/no_depth/no_cull: BASIC_COLOR
+[12:35:30] [modloading-worker-0/INFO]: Registering common data for channel xaeroworldmap:main!
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/translucent/no_depth: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/translucent/lequal_depth/offset_1: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/translucent/lequal_depth/offset_2: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/translucent/lequal_depth/offset_3: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/translucent/lequal_depth/no_cull: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/translucent/lequal_depth: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/translucent/depth_mask: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/translucent: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/masa/no_depth/no_cull: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/masa/no_depth: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/masa/lequal_depth/offset_1: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/masa/lequal_depth/offset_2: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/masa/lequal_depth/offset_3: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/masa/lequal_depth/no_cull: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/masa/lequal_depth: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/masa/depth_mask: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_color/masa: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/text_plate/no_depth: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/text_plate: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/minihud/shape/no_depth/offset: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/minihud/shape/no_depth: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/minihud/shape/offset/no_cull: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/minihud/shape/offset: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/minihud/shape/no_cull: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/minihud/shape: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/translucent/no_depth/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/translucent/no_depth: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/translucent/lequal_depth/offset_1: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/translucent/lequal_depth/offset_2: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/translucent/lequal_depth/offset_3: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/translucent/lequal_depth/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/translucent/lequal_depth: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/translucent: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/masa/no_depth/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/masa/no_depth: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/masa/lequal_depth/offset_1: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/masa/lequal_depth/offset_2: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/masa/lequal_depth/offset_3: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/masa/lequal_depth/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/masa/lequal_depth: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/position_color_lines/masa: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/minihud/shape_lines/no_depth/offset: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/minihud/shape_lines/no_depth: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/minihud/shape_lines/offset/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/minihud/shape_lines/offset: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/minihud/shape_lines/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/minihud/shape_lines: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/translucent/no_depth/no_cull: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/translucent/no_depth: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/translucent/lequal_depth/offset_1: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/translucent/lequal_depth/offset_2: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/translucent/lequal_depth/offset_3: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/translucent/lequal_depth/no_cull: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/translucent/lequal_depth: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/translucent/depth_mask: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/translucent: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/masa/no_depth/no_cull: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/masa/no_depth: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/masa/lequal_depth/offset_1: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/masa/lequal_depth/offset_2: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/masa/lequal_depth/offset_3: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/masa/lequal_depth/no_cull: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/masa/lequal_depth: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/masa/depth_mask: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/position_tex_color/masa: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/translucent/no_depth/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/translucent/no_depth: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/translucent/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/translucent/lequal_depth: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/translucent/offset_1: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/translucent/offset_2: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/translucent/offset_3: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/translucent: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/masa_simple/no_depth/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/masa_simple/no_depth: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/masa_simple/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/masa_simple/lequal_depth: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/masa_simple/offset_1: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/masa_simple/offset_2: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/masa_simple/offset_3: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_lines/masa_simple: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/translucent/no_depth/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/translucent/no_depth: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/translucent/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/translucent/offset_1: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/translucent/offset_2: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/translucent/offset_3: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/translucent: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/masa_simple/no_depth/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/masa_simple/no_depth: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/masa_simple/no_cull: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/masa_simple/offset_1: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/masa_simple/offset_2: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/masa_simple/offset_3: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/debug_line_strip/masa_simple: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/gui_overlay: BASIC_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found okay program match for malilib:pipeline/gui_textured_overlay: TEXTURED_COLOR
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/solid_terrain: TERRAIN_SOLID
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/wireframe: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found fine program match for malilib:pipeline/cutout_terrain: TERRAIN_CUTOUT
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/solid_terrain/offset: TERRAIN_SOLID
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/wireframe/offset: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found fine program match for malilib:pipeline/cutout_terrain/offset: TERRAIN_CUTOUT
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/translucent: TERRAIN_TRANSLUCENT
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/translucent/offset: TERRAIN_TRANSLUCENT
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/solid_block/masa: MOVING_BLOCK
+[12:35:30] [modloading-worker-0/WARN]: Found fine program match for malilib:pipeline/cutout_block/masa: TERRAIN_CUTOUT
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/solid_block/offset: MOVING_BLOCK
+[12:35:30] [modloading-worker-0/WARN]: Found fine program match for malilib:pipeline/cutout_block/offset: TERRAIN_CUTOUT
+[12:35:30] [modloading-worker-0/WARN]: Found fine program match for malilib:pipeline/translucent_block: TEXT_BE
+[12:35:30] [modloading-worker-0/WARN]: Found fine program match for malilib:pipeline/translucent_block/offset: TEXT_BE
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/legacy/solid: TERRAIN_SOLID
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/legacy/wireframe: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found fine program match for malilib:pipeline/legacy/cutout: TERRAIN_CUTOUT
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/legacy/solid/masa/offset: TERRAIN_SOLID
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/legacy/wireframe/offset: LINES
+[12:35:30] [modloading-worker-0/WARN]: Found fine program match for malilib:pipeline/legacy/cutout/offset: TERRAIN_CUTOUT
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/legacy/translucent: TERRAIN_TRANSLUCENT
+[12:35:30] [modloading-worker-0/WARN]: Found *decent* program match for malilib:pipeline/legacy/translucent/offset: TERRAIN_TRANSLUCENT
+[12:35:30] [modloading-worker-0/WARN]: Found fine program match for neoforge:pipeline/entity_smooth_cutout_cull: ENTITIES_CUTOUT
+[12:35:30] [modloading-worker-0/WARN]: Found fine program match for neoforge:pipeline/entity_translucent_cull: ENTITIES_TRANSLUCENT
+[12:35:30] [modloading-worker-0/WARN]: Found fine program match for neoforge:pipeline/entity_unlit_translucent: ENTITIES_TRANSLUCENT
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered Config as LZ4 for config type CompressorConfig
+[12:35:30] [modloading-worker-0/INFO]: Registering client data for channel xaeroworldmap:main!
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered Config as ZSTD for config type CompressorConfig
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered Config as LMDB for config type StorageConfig
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered Config as Memory for config type StorageConfig
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered Config as Redis for config type StorageConfig
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered Config as RocksDB for config type StorageConfig
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered Config as ReadonlyCachingLayer for config type StorageConfig
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered Config as CompressionAdaptor for config type StorageConfig
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered ConditionalStorageBackendConfig as ConditionalConfig for config type StorageConfig
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered Config as FragmentationAdaptor for config type StorageConfig
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered Config2 as AutoFragmentationAdaptor for config type StorageConfig
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered BasicPathInsertionConfig as BasicPathConfig for config type StorageConfig
+[12:35:30] [modloading-worker-0/WARN]: Cancelled mixin fun.qu_an.minecraft.asyncparticles.client.mixin.conditional.Mixin_ReplaceRandom. Check debug logs for more information.
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered Config as Serializer for config type SectionStorageConfig
+[12:35:30] [modloading-worker-0/INFO]: [me.cx.vy.cn.cg.Serialization]: Registered 13 config types
+[12:35:30] [modloading-worker-0/INFO]: Loading primary common config for channel xaeroworldmap:main!
+[12:35:30] [modloading-worker-0/WARN]: Method overwrite conflict for keyReleased in nemos_inventory_sorting.mixins.json:ContainerFilterMixin from mod nemos_inventory_sorting, previously written by com.nemonotfound.nemos.inventory.sorting.mixin.AbstractContainerScreenMixin. Skipping method.
+[12:35:30] [modloading-worker-0/INFO]: Loading server config profiles for channel xaeroworldmap:main!
+[12:35:30] [modloading-worker-0/INFO]: ping & connect fast!
+[12:35:30] [modloading-worker-0/INFO]: Loading primary client config for channel xaeroworldmap:main!
+[12:35:30] [modloading-worker-0/INFO]: Loading Entity Texture Features, now compatible with Minecraft!
+[12:35:30] [modloading-worker-0/INFO]: [ETF]: Modifying ETF Render State constructor because: for EMF
+[12:35:30] [modloading-worker-0/INFO]: Loading Entity Model Features, 0% Opti, 70% Fine.
+[12:35:30] [modloading-worker-0/INFO]: Mod side initialized
+[12:35:30] [modloading-worker-0/INFO]: Sending ConfigManager...
+[12:35:30] [modloading-worker-0/INFO]: Sending ConfigManager took 8.582 milliseconds
+[12:35:30] [modloading-worker-0/INFO]: Loading client config profiles for channel xaeroworldmap:main!
+[12:35:30] [modloading-worker-0/INFO]: Registering common data for channel xaerolib:main!
+[12:35:30] [modloading-worker-0/INFO]: Registering client data for channel xaerolib:main!
+[12:35:30] [modloading-worker-0/INFO]: Loading primary common config for channel xaerolib:main!
+[12:35:30] [modloading-worker-0/INFO]: Loading server config profiles for channel xaerolib:main!
+[12:35:30] [modloading-worker-0/INFO]: Launching AutoModpack...
+[12:35:30] [modloading-worker-0/INFO]: Loading primary client config for channel xaerolib:main!
+[12:35:30] [modloading-worker-0/INFO]: Loading client config profiles for channel xaerolib:main!
+[12:35:30] [modloading-worker-0/INFO]: Registered voxel column consumer: dev.vox.lss.compat.VoxyCompat$1
+[12:35:30] [modloading-worker-0/INFO]: Voxy detected — registered raw ingest bridge
+[12:35:30] [modloading-worker-0/INFO]: AutoModpack launched! took 107ms
+[12:35:30] [modloading-worker-0/INFO]: I guess your chests are just as messy as mine, huh?
+[12:35:31] [modloading-worker-0/INFO]: Xaero's Minimap: World Map found!
+[12:35:31] [modloading-worker-0/INFO]: No Optifine!
+[12:35:31] [modloading-worker-0/INFO]: Xaero's Minimap: No Vivecraft!
+[12:35:31] [modloading-worker-0/INFO]: Xaero's Minimap: Iris found!
+[12:35:31] [modloading-worker-0/INFO]: Loaded config for: cupboard.json
+[12:35:31] [modloading-worker-0/INFO]: Registering common data for channel xaerominimap:main!
+[12:35:31] [modloading-worker-0/INFO]: Packet Fixer 3.3.4 NeoForge has been initialized!
+[12:35:31] [modloading-worker-0/INFO]: [ETF]: 6 new ETF Random Properties registered by entity_model_features
+[12:35:31] [modloading-worker-0/INFO]: Registering client data for channel xaerominimap:main!
+[12:35:31] [modloading-worker-0/INFO]: Loading primary common config for channel xaerominimap:main!
+[12:35:31] [modloading-worker-0/INFO]: Registered voxel column consumer: dev.vox.lss.compat.XaeroMapCompat$2
+[12:35:31] [modloading-worker-0/INFO]: Xaero's World Map detected — LOD map bridge active
+[12:35:31] [modloading-worker-0/INFO]: Loading server config profiles for channel xaerominimap:main!
+[12:35:31] [modloading-worker-0/INFO]: VSS far players on NeoForge v1: positions are tracked but the render path is not implemented (best-effort tier)
+[12:35:31] [modloading-worker-0/ERROR]: Failed to create mod instance. ModID: presencefootsteps, class eu.ha3.presencefootsteps.PresenceFootsteps
+java.lang.IllegalArgumentException: Expected @SubscribeEvent method static void eu.ha3.presencefootsteps.PresenceFootsteps.onRegisterReloadListeners(net.neoforged.neoforge.client.event.AddClientReloadListenersEvent) to NOT be static
+because register() was called with an instance type.
+Either make the method non-static, or call register(PresenceFootsteps.class).
+
+	at net.neoforged.bus.EventBus.register(EventBus.java:124)
+	at TRANSFORMER/presencefootsteps@1.0.0/eu.ha3.presencefootsteps.PresenceFootsteps.<init>(PresenceFootsteps.java:94)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at net.neoforged.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:124)
+	at net.neoforged.fml.ModLoader.lambda$constructMods$0(ModLoader.java:125)
+	at net.neoforged.fml.ModLoader.lambda$dispatchParallelTask$3(ModLoader.java:203)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+[12:35:31] [modloading-worker-0/INFO]: Loading primary client config for channel xaerominimap:main!
+[12:35:31] [modloading-worker-0/INFO]: Loading client config profiles for channel xaerominimap:main!
+[12:35:31] [main/FATAL]: Failed to wait for future Mod Construction, 1 errors found
+[12:35:32] [main/FATAL]: Preparing crash report with UUID d299bbae-846e-4894-869e-ae9b034af227
+[12:35:32] [main/INFO]: [net.minecraft.server.Bootstrap:realStdoutPrintln:140]: ---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 2026-10-15 12:35:31
+Description: Bootstrap
+
+net.neoforged.fml.ModLoadingException: Loading errors encountered:
+	- Presence Footsteps (presencefootsteps) has failed to load correctly
+	  java.lang.IllegalArgumentException: Expected @SubscribeEvent method static void eu.ha3.presencefootsteps.PresenceFootsteps.onRegisterReloadListeners(net.neoforged.neoforge.client.event.AddClientReloadListenersEvent) to NOT be static
+	  because register() was called with an instance type.
+	  Either make the method non-static, or call register(PresenceFootsteps.class).
+	  
+
+	at net.neoforged.fml.ModLoader.waitForFuture(ModLoader.java:253) ~[loader-11.0.15.jar:11.0] {}
+	at net.neoforged.fml.ModLoader.dispatchParallelTask(ModLoader.java:216) ~[loader-11.0.15.jar:11.0] {}
+	at net.neoforged.fml.ModLoader.constructMods(ModLoader.java:124) ~[loader-11.0.15.jar:11.0] {}
+	at net.neoforged.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:101) ~[loader-11.0.15.jar:11.0] {}
+	at TRANSFORMER/neoforge@26.1.2.115/net.neoforged.neoforge.internal.CommonModLoader.begin(CommonModLoader.java:49) ~[neoforge-26.1.2.115-universal.jar:?] {}
+	at TRANSFORMER/neoforge@26.1.2.115/net.neoforged.neoforge.client.loading.ClientModLoader.begin(ClientModLoader.java:55) ~[neoforge-26.1.2.115-universal.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.main.Main.main(Main.java:122) [minecraft-client-patched-26.1.2.115.jar:?] {neoforge:mixin[APP:threadtweak.mixins.json:client.MainMixin from mod threadtweak,APP:euphoria_patcher.mixins.json:EuphoriaPatcherMixin from mod euphoria_patcher]}
+	at net.neoforged.fml.startup.Client.main(Client.java:19) [loader-11.0.15.jar:11.0] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[?:?] {}
+	at com.modrinth.theseus.MinecraftLaunch.relaunch(MinecraftLaunch.java:61) [theseus.jar:?] {}
+	at com.modrinth.theseus.MinecraftLaunch.main(MinecraftLaunch.java:28) [theseus.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: main
+Stacktrace:
+	at net.neoforged.fml.ModLoader.waitForFuture(ModLoader.java:253) ~[loader-11.0.15.jar:11.0] {}
+	at net.neoforged.fml.ModLoader.dispatchParallelTask(ModLoader.java:216) ~[loader-11.0.15.jar:11.0] {}
+	at net.neoforged.fml.ModLoader.constructMods(ModLoader.java:124) ~[loader-11.0.15.jar:11.0] {}
+	at net.neoforged.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:101) ~[loader-11.0.15.jar:11.0] {}
+	at TRANSFORMER/neoforge@26.1.2.115/net.neoforged.neoforge.internal.CommonModLoader.begin(CommonModLoader.java:49) ~[neoforge-26.1.2.115-universal.jar:?] {}
+	at TRANSFORMER/neoforge@26.1.2.115/net.neoforged.neoforge.client.loading.ClientModLoader.begin(ClientModLoader.java:55) ~[neoforge-26.1.2.115-universal.jar:?] {}
+-- Initialization --
+Details:
+	Modules: 
+		ADVAPI32.dll:API base de Windows 32 avanzado:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		COMCTL32.dll:Biblioteca de controles de la experiencia del usuario:6.10 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPT32.dll:Crypto API32:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTBASE.dll:Base cryptographic API DLL:10.0.19041.7802 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTSP.dll:Cryptographic Service Provider API:10.0.19041.7802 (WinBuild.160101.0800):Microsoft Corporation
+		DBGHELP.DLL:Windows Image Helper:10.0.19041.7725 (WinBuild.160101.0800):Microsoft Corporation
+		DNSAPI.dll:DLL de API de cliente DNS:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		DPAPI.DLL:Data Protection API:10.0.19041.3636 (WinBuild.160101.0800):Microsoft Corporation
+		GDI32.dll:GDI Client DLL:10.0.19041.7417 (WinBuild.160101.0800):Microsoft Corporation
+		IMM32.DLL:Multi-User Windows IMM32 API Client DLL:10.0.19041.6157 (WinBuild.160101.0800):Microsoft Corporation
+		IPHLPAPI.DLL:API auxiliar para IP:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		KERNEL32.DLL:Archivo DLL de cliente API BASE de Windows NT:10.0.19041.7725 (WinBuild.160101.0800):Microsoft Corporation
+		KERNELBASE.dll:Archivo DLL de cliente API BASE de Windows NT:10.0.19041.7725 (WinBuild.160101.0800):Microsoft Corporation
+		NLAapi.dll:Network Location Awareness 2:10.0.19041.7663 (WinBuild.160101.0800):Microsoft Corporation
+		NSI.dll:NSI User-mode interface DLL:10.0.19041.7802 (WinBuild.160101.0800):Microsoft Corporation
+		NTASN1.dll:Microsoft ASN.1 API:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		OleAut32.dll:OLEAUT32.DLL:10.0.19041.7802 (WinBuild.160101.0800):Microsoft Corporation
+		POWRPROF.dll:Archivo DLL auxiliar del perfil de energía:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		PSAPI.DLL:Process Status Helper:10.0.19041.3636 (WinBuild.160101.0800):Microsoft Corporation
+		Pdh.dll:Ayudante de los datos de rendimiento DLL de Windows:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		RPCRT4.dll:Tiempo de ejecución de llamada a procedimiento remoto:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		SHCORE.dll:SHCORE:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		SHELL32.dll:Archivo DLL común del shell de Windows:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		UMPDC.dll
+		USER32.dll:Archivo DLL de cliente API USER de Windows multiusuario:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		USERENV.dll:Userenv:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		VCRUNTIME140.dll:Microsoft® C Runtime Library:14.40.33810.0:Microsoft Corporation
+		VERSION.dll:Version Checking and File Installation Libraries:10.0.19041.3636 (WinBuild.160101.0800):Microsoft Corporation
+		WINMM.dll:MCI API DLL:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		WS2_32.dll:DLL de 32 bits de Windows Socket 2.0:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		Wldp.dll:Directiva de bloqueo de Windows:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		amsi.dll:Anti-Malware Scan Interface:10.0.19041.4355 (WinBuild.160101.0800):Microsoft Corporation
+		atcuf64.dll:Bitdefender Active Threat Control Usermode Filter:1.86.445.0 #0x41e22efa1:Bitdefender S.R.L. Bucharest, ROMANIA
+		bcrypt.dll:Biblioteca de primitivas criptográficas de Windows:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		bcryptPrimitives.dll:Windows Cryptographic Primitives Library:10.0.19041.7802 (WinBuild.160101.0800):Microsoft Corporation
+		bdhkm64.dll:BitDefender Hooking DLL:1.13.238.0 #0xda78fd1:BitDefender S.R.L. Bucharest, ROMANIA
+		clbcatq.dll:COM+ Configuration Catalog:2001.12.10941.16384 (WinBuild.160101.0800):Microsoft Corporation
+		combase.dll:Microsoft COM para Windows:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		dbgcore.DLL:Windows Core Debugging Helpers:10.0.19041.7725 (WinBuild.160101.0800):Microsoft Corporation
+		extnet.dll:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+		fwpuclnt.dll:API de modo usuario de FWP/IPsec:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		gdi32full.dll:GDI Client DLL:10.0.19041.7802 (WinBuild.160101.0800):Microsoft Corporation
+		instrument.dll:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+		java.dll:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+		javaw.exe:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+		jemalloc.dll
+		jimage.dll:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+		jli.dll:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+		jna9536792704876737015.dll:JNA native library:7.0.2:Java(TM) Native Access (JNA)
+		jvm.dll:Zulu 64-Bit Server VM:25.0.3:Azul Systems Inc.
+		kernel.appcore.dll:AppModel API Host:10.0.19041.3758 (WinBuild.160101.0800):Microsoft Corporation
+		lwjgl.dll
+		management.dll:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+		management_ext.dll:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+		msvcp140.dll:Microsoft® C Runtime Library:14.40.33810.0:Microsoft Corporation
+		msvcp_win.dll:Microsoft® C Runtime Library:10.0.19041.7802 (WinBuild.160101.0800):Microsoft Corporation
+		msvcrt.dll:Windows NT CRT DLL:7.0.19041.7802 (WinBuild.160101.0800):Microsoft Corporation
+		mswsock.dll:Proveedor de servicios de Microsoft Windows Sockets 2.0:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		napinsp.dll:Proveedor de correcciones de compatibilidad (shim) de nomenclaturas de correo electrónico:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		ncrypt.dll:Enrutador de Windows NCrypt:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		net.dll:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+		nio.dll:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+		ntdll.dll:DLL del nivel de Windows NT:10.0.19041.7725 (WinBuild.160101.0800):Microsoft Corporation
+		ntmarta.dll:Proveedor MARTA de Windows NT:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		ole32.dll:Microsoft OLE para Windows:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		perfos.dll:DLL de objetos de rendimiento del sistema Windows:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		pnrpnsp.dll:Proveedor de espacio de nombres PNRP:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		profapi.dll:User Profile Basic API:10.0.19041.7663 (WinBuild.160101.0800):Microsoft Corporation
+		rasadhlp.dll:Remote Access AutoDial Helper:10.0.19041.7802 (WinBuild.160101.0800):Microsoft Corporation
+		rsaenh.dll:Microsoft Enhanced Cryptographic Provider:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		sechost.dll:Host for SCM/SDDL/LSA Lookup APIs:10.0.19041.6807 (WinBuild.160101.0800):Microsoft Corporation
+		shlwapi.dll:Biblioteca de utilidades de Shell:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		sunmscapi.dll:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+		ucrtbase.dll:Microsoft® C Runtime Library:10.0.19041.7802 (WinBuild.160101.0800):Microsoft Corporation
+		vcruntime140_1.dll:Microsoft® C Runtime Library:14.40.33810.0:Microsoft Corporation
+		verify.dll:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+		win32u.dll:Win32u:10.0.19041.7802 (WinBuild.160101.0800):Microsoft Corporation
+		windows.storage.dll:API de almacenamiento de Microsoft WinRT:10.0.19041.4522 (WinBuild.160101.0800):Microsoft Corporation
+		winrnr.dll:LDAP RnR Provider DLL:10.0.19041.3636 (WinBuild.160101.0800):Microsoft Corporation
+		wshbth.dll:Windows Sockets Helper DLL:10.0.19041.7548 (WinBuild.160101.0800):Microsoft Corporation
+		zip.dll:Zulu Platform x64 Architecture:25.0.3:Azul Systems Inc.
+Stacktrace:
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.main.Main.main(Main.java:122) [minecraft-client-patched-26.1.2.115.jar:?] {neoforge:mixin[APP:threadtweak.mixins.json:client.MainMixin from mod threadtweak,APP:euphoria_patcher.mixins.json:EuphoriaPatcherMixin from mod euphoria_patcher]}
+	at net.neoforged.fml.startup.Client.main(Client.java:19) [loader-11.0.15.jar:11.0] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[?:?] {}
+	at com.modrinth.theseus.MinecraftLaunch.relaunch(MinecraftLaunch.java:61) [theseus.jar:?] {}
+	at com.modrinth.theseus.MinecraftLaunch.main(MinecraftLaunch.java:28) [theseus.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 26.1.2
+	Minecraft Version ID: 26.1.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 25.0.3, Azul Systems, Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Azul Systems, Inc.
+	Memory: 3670130776 bytes (3500 MiB) / 4294967296 bytes (4096 MiB) up to 4294967296 bytes (4096 MiB)
+	Memory (heap): init: 4096MiB, used: 581MiB, committed: 4096MiB, max: 4096MiB
+	Memory (non-head): init: 007MiB, used: 158MiB, committed: 163MiB, max: 000MiB
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+	Identifier: Intel64 Family 6 Model 60 Stepping 3
+	Microarchitecture: Haswell (Client)
+	Frequency (GHz): 3.60
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: Intel(R) HD Graphics 4600
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 1024.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 20.19.15.4624
+	Graphics card #1 name: NVIDIA GeForce GTX 1660
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 6144.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.16.1742
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 1.60
+	Memory slot #0 type: DDR3
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 1.60
+	Memory slot #1 type: DDR3
+	Virtual memory max (MiB): 26550.62
+	Virtual memory used (MiB): 10190.07
+	Swap memory total (MiB): 10240.00
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): available: 612477.69, total: 903698.56
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 612477.63, total: 903698.56
+	Space in storage for io.netty.native.workdir (MiB): available: 612477.63, total: 903698.56
+	Space in storage for java.io.tmpdir (MiB): available: 612477.63, total: 903698.56
+	Space in storage for workdir (MiB): available: 612477.63, total: 903698.56
+	JVM Flags: 22 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx4096M -Xmx4G -Xms4G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=40 -XX:G1MaxNewSizePercent=50 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1
+	Debug Flags: 0 total; 
+	Launched Version: 26.1.2
+	Launcher name: theseus
+	Backend library: LWJGL version 3.4.1+2
+	Backend API: Unknown
+	Window size: <not initialized>
+	GFLW Platform: <error>
+	Render Extensions: <no renderer available>
+	GL debug messages: <no renderer available>
+	Is Modded: Definitely; Client brand changed to 'neoforge'
+	Universe: 404
+	Type: Client
+	Locale: es_ES
+	System encoding: Cp1252
+	File encoding: UTF-8
+	CPU: 8x Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+	Class Processors: 
+		00,00%: neoforge:computing_frames (marker)
+		00,00%: neoforge:runtime_enum_extender
+		06,01%: neoforge:access_transformer
+		05,19%: neoforge:mixin
+		00,00%: neoforge:simple_processors_default (marker)
+		00,01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.biome.biome
+		00,01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.block.flowerpotblock
+		00,01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.levelgen.structure.structure
+		00,25%: neoforge.coremods:method_redirector
+		00,03%: foxified_classtweaker:processor
+	Mod List: 
+		AsyncParticles-26.1.2.7+26.1.2.jar                |AsyncParticles                |asyncparticles                |26.1.2.7            |Manifest: 56f39499d71cf12c33c6f8f15b471e2d0953ddc24f88dd9a889e1ddfef232b74
+		attackthroughgrass-neoforge-2.1.1-26.1.jar        |Attack Through Grass          |attackthroughgrass            |2.1.1               |Manifest: 6ffe330bbf500d7e3dadf7a5fd2536ccacff682b20ce593a280a44f90eacb0e3
+		automodpack-mod.jar                               |AutoModpack                   |automodpack_mod               |4.0.6               |Manifest: 29c11b8532f1fb64716fa1c6b087ee6aba577ca7314931207e21dc646e24d892
+		badpackets-neo-0.12.2.jar                         |Bad Packets                   |badpackets                    |0.12.2              |Manifest: 4aad26f63d390c5a27948348aa7b539a77380985ff78953b8e473703563830a4
+		BadOptimizations-2.4.1-26.1-forge.jar             |BadOptimizations              |badoptimizations              |2.4.1               |Manifest: 210a6bbd2d3a4f65748fa56d4559efeb9939fea0876ca2882dd49323b6e2a1c4
+		better_modlist-26.1.5.jar                         |Better ModList                |better_modlist                |26.1.5              |Manifest: 5739360ed16d4f1056c1a53325856dbdb5d39dad8f664c3e3736f78ccc5f0c7d
+		capecommand-neoforge-0.3.0-26.1.jar               |Cape Command                  |capecommand                   |0.3.0-26.1          |Manifest: 3f568c2ea429d7d81bc71dca0848e8945f16f691d5f022d47bb14548bf631d6d
+		chat_heads-1.2.8-neoforge-26.1.jar                |Chat Heads                    |chat_heads                    |1.2.8               |Manifest: fc752097d0436ebcc20de4c28fd69d7bf2c96d709688c90a073bbf9ca6bd1e6e
+		clientsort-neoforge-3.102.6+26.1.2.jar            |ClientSort                    |clientsort                    |3.102.6             |Manifest: 5a7e325f2ce682f535c945d505fd48d3cd151e0e2d01e144abaf8b00089e4ea9
+		cloth-config-26.1.154.jar                         |Cloth Config v26.1 API        |cloth_config                  |26.1.154            |Manifest: d9147c8549fedad478bd18e2ddeef172ef290a081f80bd4d242d54e027ecd9d8
+		Clumps-neoforge-26.1.2-26.1.2.1.jar               |Clumps                        |clumps                        |26.1.2.1            |Manifest: 7080b16dca245055244920f0ff08fe6929ab6a07fea13809d0ed2a6a119bd4d6
+		conditional-mixin-neoforge-0.6.4.jar              |conditional mixin             |conditional_mixin             |0.6.4               |Manifest: d0daeb0e5ef7593af15d3d5f1175cbb6f8f8a46ae0fe01b74bfd47381ff591c5
+		coolrain-26.1.2-NeoForge-1.0.0.jar                |Cool Rain                     |coolrain                      |1.0.0               |Manifest: 5112f4bda472fb61780c41d62b76a1378619152199cf4345c2866d19fad5f018
+		crash_assistant-neoforge.jar                      |Crash Assistant               |crash_assistant               |1.11.12             |Manifest: 9d0d9a964a9320a8d2d2cde01135a2b9cfe79c3543b69e63c1ba5bc7488e46b9
+		[admin]crashutilities-10.0.1.jar                  |Crash Utilities               |crashutilities                |10.0.1              |Manifest: a4b074d5cacfd0e65eb002c7d6dcf1bdced4374c9af377fd14e83260248a910d
+		[API CPU-GPU LEAKS]cupboard-26.1-4.1.jar          |Cupboard mod                  |cupboard                      |4.1                 |Manifest: ad4317f0ca53e3c88503a413715aaa1c9ae6a4cec0a81fc74e31da5a7d49a521
+		disableinsecurechattoast-neoforge-mc26.1-1.2.1.jar|DisableInsecureChatToast      |disableinsecurechattoast      |1.2.1               |Manifest: 4fc82c196b2fa68e4cd12704535204d5e7b087e46b3fa4daa7af6f4704cbd723
+		entity_model_features_26.1-neoforge-3.2.2.jar     |Entity Model Features         |entity_model_features         |3.2.2               |Manifest: 2eb5b0ed9dbccb4fd787952e685778f99643b32320077ee56fbe61d64831366f
+		entity_texture_features_26.1-neoforge-7.1.jar     |Entity Texture Features       |entity_texture_features       |7.1                 |Manifest: a2ba626a57883b875acd74542b46e63047d4084ca95f54e9a663c5469b62c650
+		entityculling-neoforge-1.11.3-mc26.1.2.jar        |EntityCulling                 |entityculling                 |1.11.3              |Manifest: 7a14c25ca050c92909ed7f753a18f63a1993c501a8124658a43c25a8525f8ae0
+		EuphoriaPatcher-1.10.5-r5.9.3-neoforge.jar        |Euphoria Patcher              |euphoria_patcher              |1.10.5-r5.9.3-neofor|Manifest: fe64a1fad6b6f39a95f22ea6ba9506b712e36b96c46b80f1cf38fe144900a4b2
+		fwa+26.1.2-neoforge-1.2.38-patch.2.jar            |Fancy World Animations        |fwa                           |1.2.38-patch.2      |Manifest: 5d39e250147ec0f232c9771c0b314077234093d02e4e326857d255e7f42251a5
+		fast-ip-ping-v1.0.11-mc26.1.2.jar                 |Fast IP Ping                  |fastipping                    |1.0.11              |Manifest: 25db49898876554cb1ef5f2e6c514890fa2a82d1c0fbccfe41b7f08b0b65a19c
+		ferritecore-9.0.0-neoforge.jar                    |Ferrite Core                  |ferritecore                   |9.0.0               |Manifest: a3292dadb1caf7ad220d3a4b68abff2ad58592ddd372160f9cf66c57d159b539
+		forgematica-0.5.1+mc26.1.2.jar                    |Forgematica                   |forgematica                   |0.5.1+mc26.1.2      |Manifest: fee7966b83bdd91757a42dcc84ad54528d0da017eebb262436807de63bcc7703
+		fabric-api-base-2.0.3+b11575294c.jar              |Forgified Fabric API Base     |fabric_api_base               |2.0.3+b11575294c    |Manifest: a9eeb6b6adcd033b6d28e73dbf38cff4071f5d041975120915c243b4d182cb09
+		fabric-networking-api-v1-6.3.1+054b5c7d4c.jar     |Forgified Fabric Networking AP|fabric_networking_api_v1      |6.3.1+054b5c7d4c    |Manifest: f7ffc5059fc87332b93077dec6866b086ce88882e6430fc55b9474b6beb657fd
+		[forgematica lib]foxified-classtweaker-0.1.0-alpha|FoxifiedClassTweaker          |foxified_classtweaker         |0.1.0-alpha.4       |Manifest: e434d0664c46702652675d3d3a1b5986d9b78bdc2aafd32f5b07557dab3421a6
+		gpumemleakfix-26.1-1.9.jar                        |Gpu memory leak fix           |gpumemleakfix                 |1.9                 |Manifest: 25abc8dfdde95edae32c3a9c8e225a9ff7c5df5733f815acc5e413abc03455fd
+		highly_customizable_damage_numbers-neoforge-26.1-1|Highly Customizable Damage Num|highly_customizable_damage_num|1.1.3               |Manifest: abf02f76df1f9e7c5b70a4c157252f3432dc5e7909e565a9cb79456069854045
+		ImmediatelyFast-NeoForge-1.15.3+26.1.jar          |ImmediatelyFast               |immediatelyfast               |1.15.3+26.1         |Manifest: 0d95ed9cb59f134e49cf123d90f3f96b28407e91fe31f515109ccf6cd7797344
+		iris-neoforge-1.11.4+mc26.1.2.jar                 |Iris                          |iris                          |1.11.4+mc26.1.2     |Manifest: 32d672a890d3c74f75227abc7e7ef048bbb83a799bf46632f03f0583d4c22be5
+		Jade-mc26.1-NeoForge-26.1.11.jar                  |Jade                          |jade                          |26.1.11+neoforge    |Manifest: 9a6699ff334de836fe7fe003019842ba181271a8e13344587c6092ebca3f2dd1
+		jei-26.1.2-neoforge-29.37.0.99.jar                |Just Enough Items             |jei                           |29.37.0.99          |Manifest: 3c8c9dbf9129929f5f2b29066bce6717b68b968e9690c21e5f42835894b763a6
+		lithium-neoforge-0.24.7+mc26.1.2.jar              |Lithium                       |lithium                       |0.24.7              |Manifest: 814b1afb97522066b83d82d76ea8150e3de03a7e346593d3e4380368972f4337
+		[forgematica lib] mafglib-0.5.6+mc26.1.2.jar      |MaFgLib                       |mafglib                       |0.5.6+mc26.1.2      |Manifest: 0c80ae09fc64eadd6db9f88299f183a508704eb6684ebcd7122c02df8dc4c046
+		minecraft-client-patched-26.1.2.115.jar           |Minecraft                     |minecraft                     |26.1.2              |Manifest: b262ad64d6051d7835614f3f6612db44bf49b94508b767e221aa046d3b0f9dcf
+		modernfix-neoforge-5.27.24+mc26.1.2.jar           |ModernFix                     |modernfix                     |5.27.24+mc26.1.2    |Manifest: 120b3ce5a19263fd4e546029af0cb125b3d0529faf23facd8c71eba17516c734
+		Moonrise-NeoForge-1.0.0+1234f5d.jar               |Moonrise                      |moonrise                      |1.0.0+1234f5d       |Manifest: 824fc0c555839cd593b52a8cbbf973917c6f2983dd4241e4521e4a0ce91e05c2
+		moreculling-neoforge-26.1.2-1.7.3.jar             |More Culling                  |moreculling                   |1.7.3               |Manifest: 625885bc3ad399748e396d13423810c55f6ebc9d5df9824b1693df83ccad232b
+		MouseTweaks-neoforge-mc26.1-2.31.jar              |Mouse Tweaks                  |mousetweaks                   |2.31                |Manifest: b4923774b96f14364d9e249096ea9f93e10c63ef0b9b7b8cc81f9b047e48c430
+		nemos-inventory-sorting-NeoForge-26.1.2-1.18.jar  |Nemo's Inventory Sorting      |nemos_inventory_sorting       |26.1.2-1.18         |Manifest: 00775c94c0cfb8788fed3effec805dc38848263c0a25b0fdd312def47c968900
+		neo-voxy-0.3.3-mc26.1.2-neoforge-client.jar       |Neo-Voxy                      |voxy                          |0.3.3               |Manifest: f6d0a6ae7007e2c1d52cb2e84612d6a2bf5ed190532ca0f5c5174dfcd1d508ef
+		continuity-3.0.1-0.0.8.jar                        |NeoContinuity                 |continuity                    |3.0.1-0.0.8         |Manifest: be57dd19cf719b8d46725a21246ca3d701a8e25b1158cbd10a50d205c4780ff4
+		neoforge-26.1.2.115-universal.jar                 |NeoForge                      |neoforge                      |26.1.2.115          |Manifest: 6292b8531863b1b905d255e76158c1cdb9d4be44ebe774a08e306ba575231984
+		netprodis-2.0.0+26.1.jar                          |Network Protocol Disconnect   |netprodis                     |2.0.0               |Manifest: 862fa6a7728d91d57600f9d3fd8f11936e5b8ed0142a96176e5119b6a2cd2adb
+		NoChatReports-NEOFORGE-26.1-v2.19.0.jar           |No Chat Reports               |nochatreports                 |26.1-v2.19.0        |Manifest: 805c20aec93824e66f9b80ce81997967f1982e881f78afe34df4359c3fe472f1
+		no-telemetry-1.10.0.jar                           |No Telemetry                  |no_telemetry                  |1.10.0              |Manifest: 8e9086fefd2ef7d65d31946a91b9414a23cd1b777bbab08855039b130f0b8b2c
+		obe+26.1.2-neoforge-1.1.45.jar                    |Optimized Block Entities      |obe                           |1.1.45              |Manifest: 8290a93cb10bc444be68c9100b7e9eff83bc0f0a4e713799e275f2dedb24ac5b
+		packetfixer-neoforge-3.3.4-26.1.jar               |PacketFixer                   |packetfixer                   |3.3.4               |Manifest: 20b292a42573995efb6b1842114476dd934c3b8edfe478a0af3327a21419c69a
+		paginatedadvancements-2.8.2+26.1-neoforge.jar     |Paginated Advancements        |paginatedadvancements         |2.8.2+26.1-neoforge |Manifest: 85ee83821e4fe00679283ad22a8f3cd96a4645c32b25e84e5d83cb4b672d4025
+		TextPlaceholderAPI-neoforge-51d8f4bf77.jar        |Placeholder API Neoforge      |placeholder_api               |3.0.0-beta.2+26.1   |Manifest: c99a94e55218de67a170cb57cc8c4d8a57f73ab5cb06b8028dcb65f4021a9f85
+		presencefootsteps-1.0.0.jar                       |Presence Footsteps            |presencefootsteps             |1.0.0               |Manifest: 9c88281c19d0f0d4c301dd1eafe9d25f43833bdad497e67e73bfc1f5e580b6e2
+		quick-pack-neoforge-1.5.0+26.1.2.jar              |quick-pack                    |quick_pack                    |1.5.0               |Manifest: 167e85067574cdc28baf196f76a7159b550097db00e12f384036aeb2935afbdc
+		reeses-sodium-options-neoforge-2.2.3+mc26.1.2.jar |Reese's Sodium Options        |reeses_sodium_options         |2.2.3+mc26.1.2      |Manifest: 8e9760d6834475070289c82cde381274970514b478a71c3ebeba7303a30de86c
+		scribble-2.1.0+mc26.1.2.jar                       |Scribble                      |scribble                      |2.1.0               |Manifest: f5f3f65f3b8bb9f6c6f34c650ea6f69eea28c9347921aee5a22d05b9e67bd279
+		net.caffeinemc.sodium-neoforge-0.9.2+mc26.1.2-mod.|Sodium                        |sodium                        |0.9.2+mc26.1.2      |Manifest: c2b5f5974ffbbd5552abf3c3b3d35d6c7a8a6191a55590f2f73e7af3f2c0be10
+		sodium-extra-neoforge-0.9.3+mc26.1.2.jar          |Sodium Extra                  |sodium_extra                  |0.9.3+mc26.1.2      |Manifest: 8e313f44912a4b7db53ebca0ebc7a9e1353078a964b24ce05d1339bbe2993ca7
+		spark-1.10.187-neoforge(1).jar                    |spark                         |spark                         |1.10.187            |Manifest: 88e7cc1a9ecd4c9ad22434fe2f168155baeb0ce2afba0a30269e542602e9d442
+		common_tapestry-base-1.1.1+mc26.1.2.jar           |Tapestry                      |tapestry                      |1.1.1               |Manifest: 8f5f0efdcd7aafa8748c0de0f9d49976e09508f63734eae62a02e7dd47d6bab8
+		common_tapestry-config-1.1.1+mc26.1.2.jar         |Tapestry Config               |tapestry_config               |1.1.1               |Manifest: 4ebebd0933fd9fc0ae252120e3f8a2e2e553fa18bbd23aea1ed22acbce8462bd
+		threadtweak-26.1.2-NeoForge-1.0.0.jar             |ThreadTweak                   |threadtweak                   |1.0.0               |Manifest: b923c496c9b4389fd3108b6a3245cd76f32f3b0f706d35dde65a8219a64bcf9e
+		TRansition-1.0.26-26.1.2-neoforge-SNAPSHOT.jar    |TRansition                    |transition                    |1.0.26              |Manifest: 668c84254c1536d72f40664ce6f83aafc31cb3b5792e8e1cefe9a9b0dd25c2c5
+		TRender-1.0.17-26.1.2-neoforge-SNAPSHOT.jar       |TRender                       |trender                       |1.0.17              |Manifest: fceec91616113c7e107f17e2443350f2b824e8d9401a0d785fc0e88113f38ac5
+		voxy-server-side-neoforge.jar                     |Voxy Server Side              |lss                           |0.14.0              |Manifest: 975183a75b771bed3c4ef280cda03885f45d58eab86b2c694a351c28aa8c0ebe
+		xaerominimap-neoforge-26.1.2-26.5.0.jar           |Xaero's Minimap               |xaerominimap                  |26.5.0              |Manifest: 610ca4a137455df127f6d04c6a93fd1426cb4360e4b58f14a693ae432f692f13
+		xaeroworldmap-neoforge-26.1.2-1.46.0.jar          |Xaero's World Map             |xaeroworldmap                 |1.46.0              |Manifest: c5394580d40adbc4dccd52a194a9022d69c05b52b6f747c701d9d21cb95ac1f7
+		xaerolib-neoforge-26.1.2-1.7.3.jar                |XaeroLib                      |xaerolib                      |1.7.3               |Manifest: 805956f5cbda9cdf3761f9fe7532d996f10daadc191c85606816399091306075
+	Crash Report UUID: d299bbae-846e-4894-869e-ae9b034af227
+	FML: 11.0.15
+	NeoForge: 26.1.2.115
+[12:35:32] [main/FATAL]: Preparing crash report with UUID 93017cdd-ce84-43ff-8174-d1682cba6c55
+[12:35:32] [main/INFO]: [net.minecraft.server.Bootstrap:realStdoutPrintln:140]: #@!@# Game crashed! Crash report saved to: #@!@# C:\Users\steel\AppData\Roaming\ModrinthApp\profiles\NeoForge 26.1.2\crash-reports\crash-2026-10-15_12.35.31-client.txt
