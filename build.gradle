@@ -1,0 +1,108 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+    id 'idea'
+}
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = mod_id
+}
+
+// Mojang ships Java 25 to end users in 26.1.2, so mods should target Java 25.
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+
+neoForge {
+    // Specify the version of NeoForge to use.
+    version = project.neo_version
+
+    // Default run configurations.
+    // These can be tweaked, removed, or duplicated as needed.
+    runs {
+        client {
+            client()
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        server {
+            server()
+            programArgument '--nogui'
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        // applies to all the run configs above
+        configureEach {
+            // This host has no IPv6 support, and another server already occupies the default port.
+            systemProperty 'java.net.preferIPv4Stack', 'true'
+            // ARM64 Linux dev host: use the natives dir prepared by
+            // scripts/prepare-arm64-natives.sh (replaces LWJGL's libopenal.so,
+            // which needs GLIBCXX_3.4.30, with OL9's openal-soft build).
+            def arm64Natives = rootProject.file('.lwjgl-arm64-natives')
+            if (arm64Natives.exists()) {
+                systemProperty 'org.lwjgl.librarypath', arm64Natives.absolutePath
+            }
+            // Recommended logging data for a userdev environment
+            // The markers can be added/remove as needed separated by commas.
+            // "SCAN": For mods scan.
+            // "REGISTRIES": For firing of registry events.
+            // "REGISTRYDUMP": For getting the contents of all registries.
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+
+            // Recommended logging level for the console
+            logLevel = org.slf4j.event.Level.DEBUG
+        }
+    }
+
+    mods {
+        // define mod <-> source bindings
+        // these are used to tell the game which sources are for which mod
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+// This block of code expands all declared replace properties in the specified resource targets.
+// A missing property will result in an error. Properties are expanded using ${} Groovy notation.
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [
+            minecraft_version      : minecraft_version,
+            minecraft_version_range: minecraft_version_range,
+            neo_version            : neo_version,
+            mod_id                 : mod_id,
+            mod_name               : mod_name,
+            mod_license            : mod_license,
+            mod_version            : mod_version,
+    ]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "src/main/templates"
+    into "build/generated/sources/modMetadata"
+}
+// Include the output of "generateModMetadata" as an input directory for the build
+// this works with both building through Gradle and the IDE.
+sourceSets.main.resources.srcDir generateModMetadata
+// To avoid having to run "generateModMetadata" manually, make it run on every project reload
+neoForge.ideSyncTask generateModMetadata
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}
+
+// Dev-only, ARM64 Linux hosts: runClient loads LWJGL natives from
+// .lwjgl-arm64-natives/ (prepared by scripts/prepare-arm64-natives.sh).
+// The natives are NOT added to the classpath on purpose: LWJGL prefers
+// classpath resources over org.lwjgl.librarypath, and its SharedLibraryLoader
+// overwrites org.lwjgl.librarypath with its extraction dir when it extracts
+// anything. With no natives on the classpath, every module (including the
+// GLIBCXX-compatible openal-soft build for OL9) loads straight from the dir.
+// If the dir does not exist (e.g. x64 hosts), nothing is changed.
